@@ -3,12 +3,12 @@
     <channel>
         <title>Actvt</title>
         <item>
-            <title>1.0.3</title>
-            <pubDate>Mon, 29 Sep 2025 13:23:54 +0200</pubDate>
-            <sparkle:version>1.0.3</sparkle:version>
-            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <title>1.0.4</title>
+            <pubDate>Mon, 13 Oct 2025 16:51:12 +0200</pubDate>
+            <sparkle:version>1.0.4</sparkle:version>
+            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/Tunji17/actvt-releases/releases/download/prod/Actvt-1.0.3.dmg" length="6734555" type="application/octet-stream" sparkle:edSignature="FQ03ds/HRx5WsHEeJvGpw6el7yhS2okJm+g2Mnu4aY7srqrQpLWkJcusbxq0Xp74+34EAUEACARqrsntZgScCw=="/>
+            <enclosure url="https://github.com/Tunji17/actvt-releases/releases/download/prod/Actvt-1.0.4.dmg" length="6806894" type="application/octet-stream" sparkle:edSignature="NVbWmT6coKDi/bppFcXtuWwU25OZnfkhk0HiM5RXJHQTRDzMCYf4si9qh2uvoI3sCx2qTYFKNVvgZqjTrmgVAg=="/>
         </item>
     </channel>
 </rss>
