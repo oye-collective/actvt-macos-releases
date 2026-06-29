@@ -3,6 +3,34 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.1.2</title>
+            <pubDate>Mon, 29 Jun 2026 12:02:28 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>259200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.1.2</sparkle:version>
+            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• MCP server: connect Actvt to Claude Code and other AI tools so your agents can query live system metrics, ports, and session data on demand
+• On-device sensitive-data (PII) detection: Actvt now scans your agent transcripts for emails, cards, IDs, and secrets — fully offline, nothing leaves your Mac
+• Sensitive data is masked by default; reveal or hide it instantly with ⇧⌘P
+• A new "Has PII" Smart Collection surfaces every session with detected sensitive data
+• Copy any agent session as Markdown in one click
+
+Improved
+• Live system metrics are now persisted, so your CPU, GPU, memory, and network history survives across launches
+• Reworked memory and thermal cards for clearer, more accurate readings
+• Larger, crisper menu bar icon
+• Updates now check on launch and install automatically on quit, with a smoother phased rollout
+• Full file paths are no longer shown, keeping your directory structure private
+
+Fixed
+• Your license no longer expires when the app briefly can't reach the network
+• Fixed a deadlock that could cause the app to hang
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1.2/Actvt-1.1.2.dmg" length="17636441" type="application/octet-stream" sparkle:edSignature="vQekqOGa8tQnazMBhdB0wFOO4Jk4Vkxarhs5naHpeaISoGpvy8e9fQc1pKscjJRyx1NA3z+/4RVqbtmovayUAg=="/>
+        </item>
+        <item>
             <title>1.1.1</title>
             <pubDate>Tue, 16 Jun 2026 14:28:31 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -19,15 +47,6 @@
             <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1/Actvt-1.1.dmg" length="7126854" type="application/octet-stream" sparkle:edSignature="OofzWCDEoSxcXoizHYohUxzYjxpppfG/X++wL5/mxeFpFd51XJ3J4phTY01x9jGKaXoTxlBOL9HC2V7own7RCg=="/>
-        </item>
-        <item>
-            <title>1.0.7</title>
-            <pubDate>Fri, 30 Jan 2026 12:03:04 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:version>1.0.7</sparkle:version>
-            <sparkle:shortVersionString>1.0.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.0.7/Actvt-1.0.7.dmg" length="5679364" type="application/octet-stream" sparkle:edSignature="PaMPfm+jBkgNzHO0cPsZT8gto6WwP8YmAbVI+PSSmRt1jW9nNoENFlocFkQSFjibQ2lpQiOGcMXu60zHRYtyAA=="/>
         </item>
     </channel>
 </rss>
