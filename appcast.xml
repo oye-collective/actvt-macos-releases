@@ -3,6 +3,37 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.1.4</title>
+            <pubDate>Fri, 17 Jul 2026 16:59:34 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>259200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.1.4</sparkle:version>
+            <sparkle:shortVersionString>1.1.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[This release fixes a crash at launch in 1.1.3 and carries everything new from that version. If Actvt crashes immediately after updating, download this version manually from actvt.io
+
+New
+• Remote Sessions (Basic and Premium): see your agent sessions on other machines over SSH, including headless Linux boxes. Enable in Settings > Agents and install the CLI on each host with one command; Tailscale machines are discovered automatically
+• Read remote transcripts on demand, resume any remote session in one click, and browse every machine in one merged timeline. Remote data stays in memory and never touches your local index
+• Notifications: get told when a session is waiting for your input, finishes, or errors. Optional alerts cover long-running sessions, cost thresholds, error bursts, and thermal pressure
+• Click a session notification (or use the session view) to jump straight to the terminal or editor window it runs in
+• Keyboard shortcuts: press the hotkey prefix (default Option+T), then a key to jump anywhere in the app. Customize in Settings > General
+• Usage bars: your Claude and Codex plan limits in the Overview, with reset countdowns and a notification when a used-up limit resets
+• Overview time ranges: view your agent activity for the last 7, 30, or 90 days, or all time
+
+Improved
+• The Basic tier now includes 30 days of agent session history (free covers the last 72 hours; Premium keeps unlimited history)
+• Live status is backed by the real process state, so a session waiting for input reads differently from one that is streaming, and killed sessions drop their live dot within seconds
+• Sessions show where they started (CLI, desktop app, or IDE) and can be filtered by it. Claude Desktop sessions are now tracked alongside Claude Code and Codex
+
+Fixed
+• Fixed a crash at launch on macOS 26.5 introduced in 1.1.3
+• A brief server outage can no longer deactivate your license. Actvt keeps it and recovers on the next successful check
+• Session timestamps no longer show "in 0 sec." right after an update
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1.4/Actvt-1.1.4.dmg" length="18294165" type="application/octet-stream" sparkle:edSignature="6ZYVzR8XPG8HWfKsTMxZXcvQ6L4btV/DUa1dXkJCU6iahAth/oW/0A6APDcijEFxIeENyeOln994wg//0duBCg=="/>
+        </item>
+        <item>
             <title>1.1.3</title>
             <pubDate>Fri, 17 Jul 2026 16:23:45 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -57,15 +88,6 @@ Fixed
 • Fixed a deadlock that could cause the app to hang
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1.2/Actvt-1.1.2.dmg" length="17636441" type="application/octet-stream" sparkle:edSignature="vQekqOGa8tQnazMBhdB0wFOO4Jk4Vkxarhs5naHpeaISoGpvy8e9fQc1pKscjJRyx1NA3z+/4RVqbtmovayUAg=="/>
-        </item>
-        <item>
-            <title>1.1.1</title>
-            <pubDate>Tue, 16 Jun 2026 14:28:31 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:version>1.1.1</sparkle:version>
-            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1.1/Actvt-1.1.1.dmg" length="7180501" type="application/octet-stream" sparkle:edSignature="BJdwC1HUm4AmFsiZBEiXp1gj+5P6TBLOFgpX4Wrf3uZAe5Ln0qXZNzJd+biN/e4JTl5TRn/9EE7DvJST1geTBA=="/>
         </item>
     </channel>
 </rss>
