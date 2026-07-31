@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updatedAt": "2026-07-28",
+  "updatedAt": "2026-07-31",
   "currency": "USD",
   "perMillionTokens": {
     "gpt-5.6-sol": {
@@ -11,18 +11,18 @@
       "cacheRead": 0.5
     },
     "gpt-5.6-terra": {
-      "input": 2.5,
-      "output": 15.0,
+      "input": 2.0,
+      "output": 12.0,
       "cacheWrite5m": 0.0,
       "cacheWrite1h": 0.0,
-      "cacheRead": 0.25
+      "cacheRead": 0.2
     },
     "gpt-5.6-luna": {
-      "input": 1.0,
-      "output": 6.0,
+      "input": 0.2,
+      "output": 1.2,
       "cacheWrite5m": 0.0,
       "cacheWrite1h": 0.0,
-      "cacheRead": 0.1
+      "cacheRead": 0.02
     },
     "gpt-5.5": {
       "input": 5.0,
@@ -72,6 +72,13 @@
       "cacheWrite5m": 0.0,
       "cacheWrite1h": 0.0,
       "cacheRead": 0.125
+    },
+    "claude-mythos-5": {
+      "input": 10.0,
+      "output": 50.0,
+      "cacheWrite5m": 12.5,
+      "cacheWrite1h": 20.0,
+      "cacheRead": 1.0
     },
     "claude-fable-5": {
       "input": 10.0,
