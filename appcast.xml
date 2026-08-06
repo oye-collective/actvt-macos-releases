@@ -3,6 +3,43 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.1.6</title>
+            <pubDate>Thu, 06 Aug 2026 11:39:06 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>259200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.1.6</sparkle:version>
+            <sparkle:shortVersionString>1.1.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• Notification pace: pick Instant, Balanced or Relaxed in Settings > General to set how often Actvt interrupts you. Relaxed suits agents running in loops
+• Repeats from one project are grouped. The first arrives as usual, the rest come back as one summary, so a scheduled re-run no longer floods Notification Center
+• Mute a project from the notification itself, for an hour or a day. Muted projects are listed in Settings with the time left, and every mute expires on its own
+• Notifications now say what the agent needs: the tool it wants permission to run, or the question it ended on
+• Agents can notify you themselves. Any agent on Actvt's MCP server can say in its own words why it stopped, and Actvt's own detection stays as a backstop. Free on every tier
+• Agents on your other machines can notify you too. Run actvt-cli notify from a session on any remote host and the message reaches your Mac on the next sync, with the same mutes and grouping as everything else. Update actvt-cli on each host to enable it
+• Remote quiet time is yours to set: how long a session on another machine must pause before Actvt calls it stopped
+
+Improved
+• Your license keeps working for up to 30 days offline and re-verifies in the background, so a trip, a flaky connection or a server outage can't lock you out
+• AI PII detection is now labelled Experimental in Settings, so it is clear that its accuracy is still being tuned. The regex detection it builds on is unchanged
+• Notification text is masked for personal data, and macOS hides it entirely when previews are off
+• Claude usage now shows your per-model limits again, including Fable, and names your plan (Max 20x, Pro) on the usage card
+• If you use pay-as-you-go credits, Claude usage now shows what you have spent against your monthly cap. This is money actually billed, and it is labelled to keep it apart from the API-rate estimates
+• Cost figures now say they are API rates, and when Actvt can see you are on a Pro, Max or Plus plan it says so and explains that the number is not your bill, just what those tokens would cost on the API
+• Cost estimates cover the latest models, including Claude Opus 5
+• Sessions on a model with no published pricing are counted and labelled, so an unpriced session isn't mistaken for a free one
+• Freeing a port from Monitor runs a countdown you can cancel, and it keeps running while you scroll
+
+Fixed
+• Actvt no longer asks you to re-enter your license key after a stretch offline
+• A license with no expiry now reads "Never expires" instead of a date decades away, and activating one no longer fails with a decode error
+• Running out of activations says so, instead of reporting a rate limit
+• The license window no longer lists features that don't exist, and now credits Basic with its 30 days of session history
+• Pricing data syncs again, so cost estimates stay current
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1.6/Actvt-1.1.6.dmg" length="18484117" type="application/octet-stream" sparkle:edSignature="TVLCgXeGiDDkRN4LgRlU7aO4XbjVO+TczLZHSLmFXiBkvLvgz54Rel64xtF+DY/BcuulAnjfPZHkUVyk10KeCA=="/>
+        </item>
+        <item>
             <title>1.1.5</title>
             <pubDate>Fri, 17 Jul 2026 17:44:43 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
