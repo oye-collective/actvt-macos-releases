@@ -22,7 +22,7 @@ It ships an embedded **MCP server**, so your agents can query the machine they a
 
 **[Download for Apple Silicon](https://actvt.io)**. Requires macOS 15.5 or later.
 
-The current release is **1.1.5**. Updates are delivered in-app through the Sparkle appcast in
+The current release is **1.1.6**. Updates are delivered in-app through the Sparkle appcast in
 this repository.
 
 ## What it does
