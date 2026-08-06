@@ -3,7 +3,7 @@
   "name": "io.actvt/actvt",
   "title": "Actvt",
   "description": "Query live Mac system metrics, listening ports, and Claude Code and Codex session history.",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "websiteUrl": "https://actvt.io",
   "repository": {
     "url": "https://github.com/oye-collective/actvt-macos-releases",
@@ -13,7 +13,9 @@
     {
       "src": "https://actvt.io/actvt-glass-logo-96.png",
       "mimeType": "image/png",
-      "sizes": ["96x96"]
+      "sizes": [
+        "96x96"
+      ]
     }
   ]
 }
