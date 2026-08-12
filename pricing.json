@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updatedAt": "2026-07-31",
+  "updatedAt": "2026-08-12",
   "currency": "USD",
   "perMillionTokens": {
     "gpt-5.6-sol": {
@@ -52,6 +52,13 @@
       "cacheWrite1h": 0.0,
       "cacheRead": 0.175
     },
+    "gpt-5.2": {
+      "input": 1.75,
+      "output": 14.0,
+      "cacheWrite5m": 0.0,
+      "cacheWrite1h": 0.0,
+      "cacheRead": 0.175
+    },
     "gpt-5.2-codex": {
       "input": 1.75,
       "output": 14.0,
@@ -59,7 +66,21 @@
       "cacheWrite1h": 0.0,
       "cacheRead": 0.175
     },
+    "gpt-5.1": {
+      "input": 1.25,
+      "output": 10.0,
+      "cacheWrite5m": 0.0,
+      "cacheWrite1h": 0.0,
+      "cacheRead": 0.125
+    },
     "gpt-5.1-codex": {
+      "input": 1.25,
+      "output": 10.0,
+      "cacheWrite5m": 0.0,
+      "cacheWrite1h": 0.0,
+      "cacheRead": 0.125
+    },
+    "gpt-5": {
       "input": 1.25,
       "output": 10.0,
       "cacheWrite5m": 0.0,
