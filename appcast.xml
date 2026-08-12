@@ -3,6 +3,33 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.1.7</title>
+            <pubDate>Wed, 12 Aug 2026 15:32:08 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>259200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.1.7</sparkle:version>
+            <sparkle:shortVersionString>1.1.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• Search by meaning. Ask for what a session was about instead of the exact words it used, and Actvt finds it: "the session where I fixed the flaky login test" now works even when none of those words appear. Free on every tier
+• Meaning search runs entirely on your Mac. It uses a small model Actvt downloads once, about 60 MB, only if you turn the feature on. Nothing is sent anywhere, and full text search keeps working untouched whether or not you enable it
+• Switch between Text and Meaning above the session list. Actvt shows what it is doing while the model downloads and while your sessions are indexed, and search stays usable throughout
+• Agents can check your plan limits. The MCP server now answers how much of your session and weekly windows is spent, when each resets, your per-model limits and your pay-as-you-go credits, so an agent can decide whether to start a long job or wait
+• Agents can see what is running right now. Session queries can return only sessions with a live process, with the working directory each is in, which is how an agent avoids starting work in a repo another one is already in
+• Find sessions by the file they touched. Ask for anything that touched AgentMetricsIndexer.swift and get every session that did, without opening any of them
+
+Improved
+• Search no longer comes up empty because of one word. Asking "where did I fix the login bug" used to require every word to be present, so a single missing one returned nothing at all instead of the closest match. Measured on a real session library, that was one query in ten, and three in ten for questions asked in plain English
+• Agent search results now quote the matching text, so you can tell the right session from the wrong one without opening it
+• Agents are only offered the tools they can actually use. A free install is no longer told about session tools that would refuse it, which also cuts what the MCP server costs your agent to know about by more than half
+• Agent cost data now separates cache reads from cache writes, and breaks tokens down per model on sessions that used more than one, so it is possible to see whether caching is paying for itself and which model is spending your budget
+
+Fixed
+• Session costs no longer count the same tokens twice. A session that was forked or resumed from another one carries a copy of that history, and Actvt was billing it to both. Totals across the Overview, per-project and per-day views are all lower and correct as a result
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1.7/Actvt-1.1.7.dmg" length="18566319" type="application/octet-stream" sparkle:edSignature="fPmr4yHfvA0bitsYOTJ0AR/HNEOKbHnc0tSG9WZ3AVosa8BqeFUJyFg+H+z98MHbJVxnev5Hq+FnN7CMO//xAQ=="/>
+        </item>
+        <item>
             <title>1.1.6</title>
             <pubDate>Thu, 06 Aug 2026 11:39:06 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -69,37 +96,6 @@ Fixed
 • A brief server outage can no longer deactivate your license. Actvt keeps it and recovers on the next successful check
 • Session timestamps no longer show "in 0 sec." right after an update]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1.5/Actvt-1.1.5.dmg" length="18304078" type="application/octet-stream" sparkle:edSignature="OzeMhTWJNR5OHzF0tLJUViw6RTO8yQ/Z9lgWntor3r06zlwG3ibNMD85QqKLKTEsDS50bFWF9yP3jjVIJPOcAg=="/>
-        </item>
-        <item>
-            <title>1.1.4</title>
-            <pubDate>Fri, 17 Jul 2026 16:59:34 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>259200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.1.4</sparkle:version>
-            <sparkle:shortVersionString>1.1.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[This release fixes a crash at launch in 1.1.3 and carries everything new from that version. If Actvt crashes immediately after updating, download this version manually from actvt.io
-
-New
-• Remote Sessions (Basic and Premium): see your agent sessions on other machines over SSH, including headless Linux boxes. Enable in Settings > Agents and install the CLI on each host with one command; Tailscale machines are discovered automatically
-• Read remote transcripts on demand, resume any remote session in one click, and browse every machine in one merged timeline. Remote data stays in memory and never touches your local index
-• Notifications: get told when a session is waiting for your input, finishes, or errors. Optional alerts cover long-running sessions, cost thresholds, error bursts, and thermal pressure
-• Click a session notification (or use the session view) to jump straight to the terminal or editor window it runs in
-• Keyboard shortcuts: press the hotkey prefix (default Option+T), then a key to jump anywhere in the app. Customize in Settings > General
-• Usage bars: your Claude and Codex plan limits in the Overview, with reset countdowns and a notification when a used-up limit resets
-• Overview time ranges: view your agent activity for the last 7, 30, or 90 days, or all time
-
-Improved
-• The Basic tier now includes 30 days of agent session history (free covers the last 72 hours; Premium keeps unlimited history)
-• Live status is backed by the real process state, so a session waiting for input reads differently from one that is streaming, and killed sessions drop their live dot within seconds
-• Sessions show where they started (CLI, desktop app, or IDE) and can be filtered by it. Claude Desktop sessions are now tracked alongside Claude Code and Codex
-
-Fixed
-• Fixed a crash at launch on macOS 26.5 introduced in 1.1.3
-• A brief server outage can no longer deactivate your license. Actvt keeps it and recovers on the next successful check
-• Session timestamps no longer show "in 0 sec." right after an update
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1.4/Actvt-1.1.4.dmg" length="18294165" type="application/octet-stream" sparkle:edSignature="6ZYVzR8XPG8HWfKsTMxZXcvQ6L4btV/DUa1dXkJCU6iahAth/oW/0A6APDcijEFxIeENyeOln994wg//0duBCg=="/>
         </item>
     </channel>
 </rss>
