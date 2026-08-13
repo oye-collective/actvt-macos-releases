@@ -3,6 +3,34 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.1.8</title>
+            <pubDate>Thu, 13 Aug 2026 15:45:12 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>259200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.1.8</sparkle:version>
+            <sparkle:shortVersionString>1.1.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• See how full a live session's context is, in the session list and the inspector. The menu bar stays quiet until a session passes 70% of its window, then says how full it is
+• Get warned before a session fills up. Turn on Context filling in Settings > Notifications and pick a threshold; it re-arms after each compaction
+• Burn rate: what a run is costing per hour, measured over its last five minutes of activity. A measurement, not a forecast
+• Spend at a glance in the Overview: today, the last 7 days and the last 30 days, each next to your own average for that window
+• The usage card now shows what you've spent in the current billing block
+• Ports say who opened them. Monitor shows the agent session and project behind each listening port, marks it Orphaned once that session ends, and can notify you when a session leaves ports behind
+• Export any session list as CSV or JSON, with the filters you applied
+• Add extra session directories in Settings > Agents, for Claude Code projects kept outside the default location
+
+Improved
+• Session outcomes no longer depend on colour. Finished, errored and unknown were three dots of the same shape in green, red and grey; they're now a filled circle, a ring, a dash and a diamond
+• Cost data now carries each model's context window, so the meter stays right for new models without waiting for an app update
+
+Fixed
+• Meaning search no longer reports success when it indexed nothing
+• When the meaning index is unavailable, search falls back to full text instead of returning no results
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1.8/Actvt-1.1.8.dmg" length="18699715" type="application/octet-stream" sparkle:edSignature="057oyk80FjkstjiuTQDM4XHKnJlSvzLwkPGMjAlHq70KOc0CB01GkSJAWSJ7pqZM9k0eJJesrQjlgG/xPMOaBw=="/>
+        </item>
+        <item>
             <title>1.1.7</title>
             <pubDate>Wed, 12 Aug 2026 15:32:08 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -65,37 +93,6 @@ Fixed
 • Pricing data syncs again, so cost estimates stay current
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1.6/Actvt-1.1.6.dmg" length="18484117" type="application/octet-stream" sparkle:edSignature="TVLCgXeGiDDkRN4LgRlU7aO4XbjVO+TczLZHSLmFXiBkvLvgz54Rel64xtF+DY/BcuulAnjfPZHkUVyk10KeCA=="/>
-        </item>
-        <item>
-            <title>1.1.5</title>
-            <pubDate>Fri, 17 Jul 2026 17:44:43 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>259200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.1.5</sparkle:version>
-            <sparkle:shortVersionString>1.1.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• Remote Sessions (Basic and Premium): see your agent sessions on other machines over SSH, including headless Linux boxes. Enable in Settings > Agents and install the CLI on each host with one command; Tailscale machines are discovered automatically
-• Read remote transcripts on demand, resume any remote session in one click, and browse every machine in one merged timeline. Remote data stays in memory and never touches your local index
-• Notifications: get told when a session is waiting for your input, finishes, or errors. Optional alerts cover long-running sessions, cost thresholds, error bursts, and thermal pressure
-• Click a session notification (or use the session view) to jump straight to the terminal or editor window it runs in
-• Keyboard shortcuts: press the hotkey prefix (default Option+T), then a key to jump anywhere in the app. Customize in Settings > General
-• Usage bars: your Claude and Codex plan limits in the Overview, with reset countdowns and a notification when a used-up limit resets
-• Overview time ranges: view your agent activity for the last 7, 30, or 90 days, or all time
-
-Improved
-• The Basic tier now includes 30 days of agent session history (free covers the last 72 hours; Premium keeps unlimited history)
-• Live status is backed by the real process state, so a session waiting for input reads differently from one that is streaming, and killed sessions drop their live dot within seconds
-• Sessions show where they started (CLI, desktop app, or IDE) and can be filtered by it. Claude Desktop sessions are now tracked alongside Claude Code and Codex
-• The hotkey settings now tell you when the helper is missing Accessibility permission, with a shortcut to System Settings
-
-Fixed
-• Fixed a crash at launch on macOS 26.5
-• Fixed a crash at launch that could occur when the same agent session exists in two project folders (for example after a project folder was moved or copied)
-• Keyboard shortcuts no longer break after an app update: Actvt now restarts its helper automatically when it is outdated, no logout needed
-• A brief server outage can no longer deactivate your license. Actvt keeps it and recovers on the next successful check
-• Session timestamps no longer show "in 0 sec." right after an update]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1.5/Actvt-1.1.5.dmg" length="18304078" type="application/octet-stream" sparkle:edSignature="OzeMhTWJNR5OHzF0tLJUViw6RTO8yQ/Z9lgWntor3r06zlwG3ibNMD85QqKLKTEsDS50bFWF9yP3jjVIJPOcAg=="/>
         </item>
     </channel>
 </rss>
