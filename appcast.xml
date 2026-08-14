@@ -6,7 +6,7 @@
             <title>1.1.8</title>
             <pubDate>Thu, 13 Aug 2026 15:45:12 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>259200</sparkle:phasedRolloutInterval>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
             <sparkle:version>1.1.8</sparkle:version>
             <sparkle:shortVersionString>1.1.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
@@ -34,7 +34,7 @@ Fixed
             <title>1.1.7</title>
             <pubDate>Wed, 12 Aug 2026 15:32:08 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>259200</sparkle:phasedRolloutInterval>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
             <sparkle:version>1.1.7</sparkle:version>
             <sparkle:shortVersionString>1.1.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
@@ -61,7 +61,7 @@ Fixed
             <title>1.1.6</title>
             <pubDate>Thu, 06 Aug 2026 11:39:06 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>259200</sparkle:phasedRolloutInterval>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
             <sparkle:version>1.1.6</sparkle:version>
             <sparkle:shortVersionString>1.1.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
