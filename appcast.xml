@@ -3,6 +3,35 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.2.1</title>
+            <pubDate>Wed, 02 Sep 2026 13:49:36 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.2.1</sparkle:version>
+            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• Rename any session, local or remote. Double-click the title in the transcript or use Rename in the list's right-click menu
+• Open a shell on a remote host in the session's project folder, or copy the SSH command, from the right-click menu
+• Remote transcripts refresh as the session moves on, with a button to fetch the latest on demand
+• Clicking a "session went quiet" notification opens that remote session
+• The MCP transcript tool reads remote sessions when given a host
+
+Improved
+• A remote host that misses a poll keeps its sessions on screen, marked with when they were last synced
+• Hosts that keep failing are retried less often, so a dead box no longer costs a connection attempt every minute
+• Settings > Agents distinguishes "actvt-cli not installed", "actvt-cli failed" and "unreachable", shows last sync and CLI version per host, and has a Sync now button
+• The Linux actvt-cli is a static build and now runs on Amazon Linux 2023 and RHEL 9. Re-run the install command on hosts where it failed to start
+• The Claude usage card shows when it will retry after a rate limit
+• Clicking a session notification always opens the session in Actvt
+
+Fixed
+• A remote host whose CLI could not start was reported as unreachable
+• Releases no longer fail on a truncated package download or an unavailable MCP registry
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.1/Actvt-1.2.1.dmg" length="18825043" type="application/octet-stream" sparkle:edSignature="bQASSpyb48EFIM4YjhwC2TdWCF/cqmNeR4gAkHye0SaXIjLNloMzN8BqWNiRCAhsmQzG92hJ/oFG5CCdVzp6BQ=="/>
+        </item>
+        <item>
             <title>1.2.0</title>
             <pubDate>Tue, 01 Sep 2026 15:25:40 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -55,33 +84,6 @@ Fixed
 • When the meaning index is unavailable, search falls back to full text instead of returning no results
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1.8/Actvt-1.1.8.dmg" length="18699715" type="application/octet-stream" sparkle:edSignature="057oyk80FjkstjiuTQDM4XHKnJlSvzLwkPGMjAlHq70KOc0CB01GkSJAWSJ7pqZM9k0eJJesrQjlgG/xPMOaBw=="/>
-        </item>
-        <item>
-            <title>1.1.7</title>
-            <pubDate>Wed, 12 Aug 2026 15:32:08 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.1.7</sparkle:version>
-            <sparkle:shortVersionString>1.1.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• Search by meaning. Ask for what a session was about instead of the exact words it used, and Actvt finds it: "the session where I fixed the flaky login test" now works even when none of those words appear. Free on every tier
-• Meaning search runs entirely on your Mac. It uses a small model Actvt downloads once, about 60 MB, only if you turn the feature on. Nothing is sent anywhere, and full text search keeps working untouched whether or not you enable it
-• Switch between Text and Meaning above the session list. Actvt shows what it is doing while the model downloads and while your sessions are indexed, and search stays usable throughout
-• Agents can check your plan limits. The MCP server now answers how much of your session and weekly windows is spent, when each resets, your per-model limits and your pay-as-you-go credits, so an agent can decide whether to start a long job or wait
-• Agents can see what is running right now. Session queries can return only sessions with a live process, with the working directory each is in, which is how an agent avoids starting work in a repo another one is already in
-• Find sessions by the file they touched. Ask for anything that touched AgentMetricsIndexer.swift and get every session that did, without opening any of them
-
-Improved
-• Search no longer comes up empty because of one word. Asking "where did I fix the login bug" used to require every word to be present, so a single missing one returned nothing at all instead of the closest match. Measured on a real session library, that was one query in ten, and three in ten for questions asked in plain English
-• Agent search results now quote the matching text, so you can tell the right session from the wrong one without opening it
-• Agents are only offered the tools they can actually use. A free install is no longer told about session tools that would refuse it, which also cuts what the MCP server costs your agent to know about by more than half
-• Agent cost data now separates cache reads from cache writes, and breaks tokens down per model on sessions that used more than one, so it is possible to see whether caching is paying for itself and which model is spending your budget
-
-Fixed
-• Session costs no longer count the same tokens twice. A session that was forked or resumed from another one carries a copy of that history, and Actvt was billing it to both. Totals across the Overview, per-project and per-day views are all lower and correct as a result
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.1.7/Actvt-1.1.7.dmg" length="18566319" type="application/octet-stream" sparkle:edSignature="fPmr4yHfvA0bitsYOTJ0AR/HNEOKbHnc0tSG9WZ3AVosa8BqeFUJyFg+H+z98MHbJVxnev5Hq+FnN7CMO//xAQ=="/>
         </item>
     </channel>
 </rss>
