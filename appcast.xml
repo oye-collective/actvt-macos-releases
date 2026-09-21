@@ -3,6 +3,25 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.2.3</title>
+            <pubDate>Mon, 21 Sep 2026 15:02:15 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.2.3</sparkle:version>
+            <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• Basic licences no longer show an expiry date.
+
+Improved
+• Anonymous usage data, when you have it switched on.
+
+Fixed
+• The welcome screen no longer runs past the top of its window.
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.3/Actvt-1.2.3.dmg" length="18964369" type="application/octet-stream" sparkle:edSignature="7N/3HmOiRAFoRLOeffciBJJfLk6dZrEiuwQhP7///fISPNOYxKBOMyy+MvcsfwH3RfLPH8cNJOSWlbo0PO8EBw=="/>
+        </item>
+        <item>
             <title>1.2.2</title>
             <pubDate>Mon, 14 Sep 2026 15:38:56 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -48,32 +67,6 @@ Fixed
 • Releases no longer fail on a truncated package download or an unavailable MCP registry
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.1/Actvt-1.2.1.dmg" length="18825043" type="application/octet-stream" sparkle:edSignature="bQASSpyb48EFIM4YjhwC2TdWCF/cqmNeR4gAkHye0SaXIjLNloMzN8BqWNiRCAhsmQzG92hJ/oFG5CCdVzp6BQ=="/>
-        </item>
-        <item>
-            <title>1.2.0</title>
-            <pubDate>Tue, 01 Sep 2026 15:25:40 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.2.0</sparkle:version>
-            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• Resume in Terminal opens the terminal you actually use. Ghostty, iTerm2, WezTerm, kitty and Alacritty join Terminal.app, and Actvt matches the one your agents already run in without being told. Pick a specific one in Settings > Agents if you would rather choose
-• Focus Window now finds sessions running inside tmux. Actvt locates the pane, switches tmux to it and brings its window forward, instead of reporting that the session has no window. Named sockets and more than one tmux server are handled too
-• Copy a session's ID from the top of the inspector, or from the right-click menu on any session in the list. It is what claude --resume and Actvt's MCP tools ask for, and until now the only way to get it was to read it off a filename
-
-Improved
-• The Claude usage card can refresh an expired token in place. Signing in to Claude Code another way, a setup token from CI or a secret manager, left the card blank for someone who was demonstrably signed in, with nothing they could do about it from inside Actvt
-• A token that can never read usage now says so instead of asking you to sign in again. A setup token carries the wrong scope, so re-authenticating could not have fixed it
-• The PII detection settings and the transcript's AI scanning label are now translated in German and French
-
-Fixed
-• Resume no longer opens the new session behind the windows you already had. macOS was bringing the terminal you were already looking at to the front rather than the one Actvt had just opened, which read as "it opened my terminal but did not resume anything"
-• Resume works if your shell is fish. The command Actvt sent used a grouping syntax that fish reads as something else entirely, so it failed before it started
-• Notifications no longer arrive for a tmux session you are already watching. Actvt could not tell that a pane was on screen, so that check never applied to tmux at all
-• The terminal named in a launch error is now the one that actually ran, so the permission it asks you to grant is the one that would help
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.0/Actvt-1.2.0.dmg" length="18742572" type="application/octet-stream" sparkle:edSignature="HAPuvC/DctyDL7LUcaRN4fSbnXE/O6i14WBtYvx5Q7rKnC2qB58oHDr75nwCTuN+Y8Zs9ZmHN/r/vg87/XjoAw=="/>
         </item>
     </channel>
 </rss>
