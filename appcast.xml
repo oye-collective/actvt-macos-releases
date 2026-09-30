@@ -3,6 +3,31 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.2.4</title>
+            <pubDate>Wed, 30 Sep 2026 12:25:23 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.2.4</sparkle:version>
+            <sparkle:shortVersionString>1.2.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• Ports an agent left open are traced back to the session that started them, and you're told when a session ends with one still running
+• CPU use is attributed to each agent session
+• Spend is counted on the day it happened, not the day a session last ran
+
+Improved
+• The menu bar icon and system sampling use far less CPU
+• Meaning search now covers the whole of long sessions, not just their start
+• Clicking a remote notification opens its session. Re-run the install command on remote hosts to get actvt-cli 0.5.0
+
+Fixed
+• Codex sessions from the ChatGPT app showed no messages, and edits were missing from files touched
+• Sessions interrupted by an API error showed no cost
+• Searching for a hyphenated term, such as a file or branch name
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.4/Actvt-1.2.4.dmg" length="19123347" type="application/octet-stream" sparkle:edSignature="FDJb1+Hx7Hp3vUehgbVGaAMFZjwCGJzngBtd74EoA0QhsxTPwkGZvtV+fgBda163Qnfd1wghWzdg6wwMuq+7DA=="/>
+        </item>
+        <item>
             <title>1.2.3</title>
             <pubDate>Mon, 21 Sep 2026 15:02:15 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -38,35 +63,6 @@ Improved
 • actvt-cli 0.4.0 lists pi sessions. Re-run the install command on remote hosts to pick it up
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.2/Actvt-1.2.2.dmg" length="18930485" type="application/octet-stream" sparkle:edSignature="nLls2UUQo4Aj05hyl7tGluo6v8Zyd1u1ithMpm9ppB63vanQlDPhyDHXJOd+VJ7M42kLMDMJmsX99IeCPk02Aw=="/>
-        </item>
-        <item>
-            <title>1.2.1</title>
-            <pubDate>Wed, 02 Sep 2026 13:49:36 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.2.1</sparkle:version>
-            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• Rename any session, local or remote. Double-click the title in the transcript or use Rename in the list's right-click menu
-• Open a shell on a remote host in the session's project folder, or copy the SSH command, from the right-click menu
-• Remote transcripts refresh as the session moves on, with a button to fetch the latest on demand
-• Clicking a "session went quiet" notification opens that remote session
-• The MCP transcript tool reads remote sessions when given a host
-
-Improved
-• A remote host that misses a poll keeps its sessions on screen, marked with when they were last synced
-• Hosts that keep failing are retried less often, so a dead box no longer costs a connection attempt every minute
-• Settings > Agents distinguishes "actvt-cli not installed", "actvt-cli failed" and "unreachable", shows last sync and CLI version per host, and has a Sync now button
-• The Linux actvt-cli is a static build and now runs on Amazon Linux 2023 and RHEL 9. Re-run the install command on hosts where it failed to start
-• The Claude usage card shows when it will retry after a rate limit
-• Clicking a session notification always opens the session in Actvt
-
-Fixed
-• A remote host whose CLI could not start was reported as unreachable
-• Releases no longer fail on a truncated package download or an unavailable MCP registry
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.1/Actvt-1.2.1.dmg" length="18825043" type="application/octet-stream" sparkle:edSignature="bQASSpyb48EFIM4YjhwC2TdWCF/cqmNeR4gAkHye0SaXIjLNloMzN8BqWNiRCAhsmQzG92hJ/oFG5CCdVzp6BQ=="/>
         </item>
     </channel>
 </rss>
