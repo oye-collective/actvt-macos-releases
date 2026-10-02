@@ -3,6 +3,24 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.2.5</title>
+            <pubDate>Fri, 02 Oct 2026 10:19:59 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.2.5</sparkle:version>
+            <sparkle:shortVersionString>1.2.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[Improved
+• Actvt uses about a fifth less CPU while its window is open
+
+Fixed
+• Session costs left out what subagents spent, by up to 30 % on sessions that used them. Past sessions are corrected after the update
+• An expired licence was re-checked with the server on every network change, about once a minute
+• Two agents calling Actvt's MCP server at the same time could receive each other's answers, or none
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.5/Actvt-1.2.5.dmg" length="19121764" type="application/octet-stream" sparkle:edSignature="tRdNxomqO6ceFJXwrPTfGKXHrRM9X5gZoEx/EGcBfy9fpZisf6JFKtKcmED5RUWV0S+il8rB+mkpmAP/cHj6AQ=="/>
+        </item>
+        <item>
             <title>1.2.4</title>
             <pubDate>Wed, 30 Sep 2026 12:25:23 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -45,24 +63,6 @@ Fixed
 • The welcome screen no longer runs past the top of its window.
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.3/Actvt-1.2.3.dmg" length="18964369" type="application/octet-stream" sparkle:edSignature="7N/3HmOiRAFoRLOeffciBJJfLk6dZrEiuwQhP7///fISPNOYxKBOMyy+MvcsfwH3RfLPH8cNJOSWlbo0PO8EBw=="/>
-        </item>
-        <item>
-            <title>1.2.2</title>
-            <pubDate>Mon, 14 Sep 2026 15:38:56 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.2.2</sparkle:version>
-            <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• Sessions from the pi coding agent, local and remote, with transcripts, cost, search, resume and the MCP tools
-• Notifications lead with the session name. The project sits underneath and the body says what happened
-• With previews hidden, the lock screen shows only the kind of event, never a session name or transcript text
-
-Improved
-• actvt-cli 0.4.0 lists pi sessions. Re-run the install command on remote hosts to pick it up
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.2/Actvt-1.2.2.dmg" length="18930485" type="application/octet-stream" sparkle:edSignature="nLls2UUQo4Aj05hyl7tGluo6v8Zyd1u1ithMpm9ppB63vanQlDPhyDHXJOd+VJ7M42kLMDMJmsX99IeCPk02Aw=="/>
         </item>
     </channel>
 </rss>
