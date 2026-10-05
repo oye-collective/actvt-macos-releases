@@ -3,6 +3,26 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.2.6</title>
+            <pubDate>Mon, 05 Oct 2026 15:16:59 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.2.6</sparkle:version>
+            <sparkle:shortVersionString>1.2.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• actvt-cli usage --json reports the Claude and Codex plan usage of the machine it runs on: session and weekly limits with their reset times, on Mac or Linux. Re-run the install command on remote hosts to get actvt-cli 0.6.0
+
+Improved
+• Actvt uses about a third less CPU in the background. It no longer starts a process scan every 15 seconds to see which agents are running
+• With Actvt in the background, sessions show an agent starting or stopping within about 10 seconds
+
+Fixed
+• The default horse icon in the menu bar showed extra legs. It runs on four again
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.6/Actvt-1.2.6.dmg" length="19221049" type="application/octet-stream" sparkle:edSignature="dt2E4dY2Qc7SWEFclu+m9df3OAc/Ferq+9rj6vGvfAXGtkkiXsLCTPrqhLx20SHxg6jvGXOUGobSyjcMphuZBw=="/>
+        </item>
+        <item>
             <title>1.2.5</title>
             <pubDate>Fri, 02 Oct 2026 10:19:59 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -44,25 +64,6 @@ Fixed
 • Searching for a hyphenated term, such as a file or branch name
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.4/Actvt-1.2.4.dmg" length="19123347" type="application/octet-stream" sparkle:edSignature="FDJb1+Hx7Hp3vUehgbVGaAMFZjwCGJzngBtd74EoA0QhsxTPwkGZvtV+fgBda163Qnfd1wghWzdg6wwMuq+7DA=="/>
-        </item>
-        <item>
-            <title>1.2.3</title>
-            <pubDate>Mon, 21 Sep 2026 15:02:15 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.2.3</sparkle:version>
-            <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• Basic licences no longer show an expiry date.
-
-Improved
-• Anonymous usage data, when you have it switched on.
-
-Fixed
-• The welcome screen no longer runs past the top of its window.
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.3/Actvt-1.2.3.dmg" length="18964369" type="application/octet-stream" sparkle:edSignature="7N/3HmOiRAFoRLOeffciBJJfLk6dZrEiuwQhP7///fISPNOYxKBOMyy+MvcsfwH3RfLPH8cNJOSWlbo0PO8EBw=="/>
         </item>
     </channel>
 </rss>
