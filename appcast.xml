@@ -3,6 +3,28 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.2.7</title>
+            <pubDate>Wed, 07 Oct 2026 15:31:21 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.2.7</sparkle:version>
+            <sparkle:shortVersionString>1.2.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• Agent sessions now show memory: what a Claude Code agent knew, opened and saved in its memory during a session. The inspector counts them, the transcript marks the moment a memory was opened or saved, and Show memories lists each one with when it happened and what changed. Click any step to jump to it. For sessions on remote hosts, this needs actvt-cli 0.6.1
+
+Improved
+• With semantic search on, Actvt no longer keeps up to two CPU cores busy while an agent is working. It now updates a session's search once the agent pauses, instead of after every line it writes
+• Actvt no longer refreshes its session list every 15 seconds when it was started in the background with no window open, as it does at login
+
+Fixed
+• An agent running on a loop no longer shows up as gone quiet, or as waiting for your input, while it sleeps between runs. Actvt still tells you if it doesn't wake up when it said it would. For agents on remote hosts, this needs actvt-cli 0.6.1
+• actvt-cli usage could crash on exit on Linux and print nothing. Re-run the install command on remote hosts to get actvt-cli 0.6.1
+• actvt-cli usage can now read Claude plan usage on a host where Claude Code signs in with a setup token (CLAUDE_CODE_OAUTH_TOKEN), as headless agent hosts usually do. It reported "needs sign-in" there before
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.7/Actvt-1.2.7.dmg" length="19360351" type="application/octet-stream" sparkle:edSignature="+JHx52eA8hQJ4WQeSF7DrUfMuHgnGdC07WWiJONPEZkuSYGTY1PbzCrFZTz3keP4kAq2DnioLLZhHXKXckWeAw=="/>
+        </item>
+        <item>
             <title>1.2.6</title>
             <pubDate>Mon, 05 Oct 2026 15:16:59 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -39,31 +61,6 @@ Fixed
 • Two agents calling Actvt's MCP server at the same time could receive each other's answers, or none
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.5/Actvt-1.2.5.dmg" length="19121764" type="application/octet-stream" sparkle:edSignature="tRdNxomqO6ceFJXwrPTfGKXHrRM9X5gZoEx/EGcBfy9fpZisf6JFKtKcmED5RUWV0S+il8rB+mkpmAP/cHj6AQ=="/>
-        </item>
-        <item>
-            <title>1.2.4</title>
-            <pubDate>Wed, 30 Sep 2026 12:25:23 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.2.4</sparkle:version>
-            <sparkle:shortVersionString>1.2.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• Ports an agent left open are traced back to the session that started them, and you're told when a session ends with one still running
-• CPU use is attributed to each agent session
-• Spend is counted on the day it happened, not the day a session last ran
-
-Improved
-• The menu bar icon and system sampling use far less CPU
-• Meaning search now covers the whole of long sessions, not just their start
-• Clicking a remote notification opens its session. Re-run the install command on remote hosts to get actvt-cli 0.5.0
-
-Fixed
-• Codex sessions from the ChatGPT app showed no messages, and edits were missing from files touched
-• Sessions interrupted by an API error showed no cost
-• Searching for a hyphenated term, such as a file or branch name
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.4/Actvt-1.2.4.dmg" length="19123347" type="application/octet-stream" sparkle:edSignature="FDJb1+Hx7Hp3vUehgbVGaAMFZjwCGJzngBtd74EoA0QhsxTPwkGZvtV+fgBda163Qnfd1wghWzdg6wwMuq+7DA=="/>
         </item>
     </channel>
 </rss>
