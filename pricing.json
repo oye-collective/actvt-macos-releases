@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "updatedAt": "2026-09-30",
+  "updatedAt": "2026-10-08",
   "currency": "USD",
   "perMillionTokens": {
     "gpt-6-astra": {
@@ -267,7 +267,7 @@
       "output": 10.0,
       "cacheWrite5m": 2.5,
       "cacheWrite1h": 4.0,
-      "cacheRead": 0.2
+      "cacheRead": 0.1
     },
     "claude-sonnet-5": {
       "input": 2.0,
@@ -296,6 +296,13 @@
       "cacheWrite5m": 3.75,
       "cacheWrite1h": 6.0,
       "cacheRead": 0.3
+    },
+    "claude-haiku-5-5": {
+      "input": 0.1,
+      "output": 0.5,
+      "cacheWrite5m": 0.125,
+      "cacheWrite1h": 0.2,
+      "cacheRead": 0.01
     },
     "claude-haiku-4-5": {
       "input": 1.0,
