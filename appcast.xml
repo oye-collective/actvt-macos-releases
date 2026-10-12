@@ -3,6 +3,25 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.2.8</title>
+            <pubDate>Mon, 12 Oct 2026 09:24:23 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.2.8</sparkle:version>
+            <sparkle:shortVersionString>1.2.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[Improved
+• Actvt uses about half the CPU it did while an agent is writing to a long session. It no longer re-reads the whole transcript after every line the agent adds
+• With AI PII detection on, Actvt starts lighter: it no longer re-checks its 1.6 GB model from scratch at every launch
+
+Fixed
+• With AI PII detection on, if the on-device model ever fails to run, Actvt now says so in the session's Sensitive Data card ("AI scan failed: names not masked") instead of quietly showing only the rule-based matches. A failed scan is no longer remembered as the session's result, so the next time you open the session it is scanned again. Sessions scanned by earlier versions are rescanned once
+• With AI PII detection on, Actvt no longer reports "insufficient disk space" for a model it has already downloaded
+• Actvt's window now keeps its size and position after you restart your Mac
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.8/Actvt-1.2.8.dmg" length="19369850" type="application/octet-stream" sparkle:edSignature="/CP/JhIpMDbXk4a2dFOKKZ10V2cR4VJkkblr4eORbownjdGspkWcJXpbSZoVZMlNM7/3xIIzWAhv0qbHaaj+Aw=="/>
+        </item>
+        <item>
             <title>1.2.7</title>
             <pubDate>Wed, 07 Oct 2026 15:31:21 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -43,24 +62,6 @@ Fixed
 • The default horse icon in the menu bar showed extra legs. It runs on four again
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.6/Actvt-1.2.6.dmg" length="19221049" type="application/octet-stream" sparkle:edSignature="dt2E4dY2Qc7SWEFclu+m9df3OAc/Ferq+9rj6vGvfAXGtkkiXsLCTPrqhLx20SHxg6jvGXOUGobSyjcMphuZBw=="/>
-        </item>
-        <item>
-            <title>1.2.5</title>
-            <pubDate>Fri, 02 Oct 2026 10:19:59 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.2.5</sparkle:version>
-            <sparkle:shortVersionString>1.2.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[Improved
-• Actvt uses about a fifth less CPU while its window is open
-
-Fixed
-• Session costs left out what subagents spent, by up to 30 % on sessions that used them. Past sessions are corrected after the update
-• An expired licence was re-checked with the server on every network change, about once a minute
-• Two agents calling Actvt's MCP server at the same time could receive each other's answers, or none
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.5/Actvt-1.2.5.dmg" length="19121764" type="application/octet-stream" sparkle:edSignature="tRdNxomqO6ceFJXwrPTfGKXHrRM9X5gZoEx/EGcBfy9fpZisf6JFKtKcmED5RUWV0S+il8rB+mkpmAP/cHj6AQ=="/>
         </item>
     </channel>
 </rss>
