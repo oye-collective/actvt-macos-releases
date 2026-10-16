@@ -3,6 +3,27 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.0</title>
+            <pubDate>Fri, 16 Oct 2026 08:12:37 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.0</sparkle:version>
+            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• A session's cost and usage now stay in your dashboards and spend tools after Claude Code deletes its transcript (by default after 30 days), so 90 days and All time keep counting them. The deleted text itself is no longer kept or searchable
+• With AI PII detection on, the Sensitive Data card shows how much of a long session the AI scan has covered ("AI scan: N of M turns")
+
+Improved
+• With AI PII detection on, opening a long session no longer runs the model over the whole transcript at 3–4 cores for minutes. Actvt now scans the turns you're reading, as you read them, saves what it has scanned, and stops when you leave the session
+• Scrolling the session list and transcripts is much smoother: the once-a-second metrics update no longer redraws the agent views, and session rows are lighter to draw
+
+Fixed
+• A clock that jumped forward once, then was corrected, no longer locks a paid licence while you're online. The next check with our server resets it
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.0/Actvt-1.4.0.dmg" length="19527928" type="application/octet-stream" sparkle:edSignature="kT08ZEyAHinxkf2Y7eAEJylfuREa6u02jKreZC4lsOA++GXhgPFsYBlJd4n2oR7YGL6nyNDJtDkQSONeFIXIBA=="/>
+        </item>
+        <item>
             <title>1.3.0</title>
             <pubDate>Wed, 14 Oct 2026 08:45:28 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -47,28 +68,6 @@ Fixed
 • Actvt's window now keeps its size and position after you restart your Mac
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.8/Actvt-1.2.8.dmg" length="19369850" type="application/octet-stream" sparkle:edSignature="/CP/JhIpMDbXk4a2dFOKKZ10V2cR4VJkkblr4eORbownjdGspkWcJXpbSZoVZMlNM7/3xIIzWAhv0qbHaaj+Aw=="/>
-        </item>
-        <item>
-            <title>1.2.7</title>
-            <pubDate>Wed, 07 Oct 2026 15:31:21 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.2.7</sparkle:version>
-            <sparkle:shortVersionString>1.2.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• Agent sessions now show memory: what a Claude Code agent knew, opened and saved in its memory during a session. The inspector counts them, the transcript marks the moment a memory was opened or saved, and Show memories lists each one with when it happened and what changed. Click any step to jump to it. For sessions on remote hosts, this needs actvt-cli 0.6.1
-
-Improved
-• With semantic search on, Actvt no longer keeps up to two CPU cores busy while an agent is working. It now updates a session's search once the agent pauses, instead of after every line it writes
-• Actvt no longer refreshes its session list every 15 seconds when it was started in the background with no window open, as it does at login
-
-Fixed
-• An agent running on a loop no longer shows up as gone quiet, or as waiting for your input, while it sleeps between runs. Actvt still tells you if it doesn't wake up when it said it would. For agents on remote hosts, this needs actvt-cli 0.6.1
-• actvt-cli usage could crash on exit on Linux and print nothing. Re-run the install command on remote hosts to get actvt-cli 0.6.1
-• actvt-cli usage can now read Claude plan usage on a host where Claude Code signs in with a setup token (CLAUDE_CODE_OAUTH_TOKEN), as headless agent hosts usually do. It reported "needs sign-in" there before
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.7/Actvt-1.2.7.dmg" length="19360351" type="application/octet-stream" sparkle:edSignature="+JHx52eA8hQJ4WQeSF7DrUfMuHgnGdC07WWiJONPEZkuSYGTY1PbzCrFZTz3keP4kAq2DnioLLZhHXKXckWeAw=="/>
         </item>
     </channel>
 </rss>
