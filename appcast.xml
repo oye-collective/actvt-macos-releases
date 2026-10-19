@@ -3,6 +3,23 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.1</title>
+            <pubDate>Mon, 19 Oct 2026 09:30:12 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.1</sparkle:version>
+            <sparkle:shortVersionString>1.4.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[Improved
+• An agent writing to one session no longer redraws every row of the session list, so Actvt uses less CPU while your agents work with the window open
+
+Fixed
+• A loop agent whose session has ended now reads "Ended" in the Overview's Loops card and in `actvt-cli loops`, instead of staying "Overdue" for ever. Ended loops drop out after a day
+• When Actvt's built-in sensitive-data rules improve, sessions counted with the older rules are re-scanned, so the Overview's sensitive-data figures and filters reflect the new rules without waiting for each transcript to change
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.1/Actvt-1.4.1.dmg" length="19563396" type="application/octet-stream" sparkle:edSignature="UYRrcrgLCv+tMDoakKSK2clMwWEy3JgELFN0djXVqi8Cu2w4FgTcgEQb5lpnzHNa61Mq8DTVqMjzvqiLzkgdDw=="/>
+        </item>
+        <item>
             <title>1.4.0</title>
             <pubDate>Fri, 16 Oct 2026 08:12:37 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -49,25 +66,6 @@ Fixed
 • The agent_usage_limits MCP tool now names each usage window by its length, so a weekly window is no longer called "session"
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.3.0/Actvt-1.3.0.dmg" length="19501271" type="application/octet-stream" sparkle:edSignature="E4e5qXucVgotVaYJgfkJ3or6N9JdxdV1Bi7vRvyGHFqLYCHW3TpHocCKkc3aMGMEDZArc/1HrbVXu34JHL/XAw=="/>
-        </item>
-        <item>
-            <title>1.2.8</title>
-            <pubDate>Mon, 12 Oct 2026 09:24:23 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.2.8</sparkle:version>
-            <sparkle:shortVersionString>1.2.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[Improved
-• Actvt uses about half the CPU it did while an agent is writing to a long session. It no longer re-reads the whole transcript after every line the agent adds
-• With AI PII detection on, Actvt starts lighter: it no longer re-checks its 1.6 GB model from scratch at every launch
-
-Fixed
-• With AI PII detection on, if the on-device model ever fails to run, Actvt now says so in the session's Sensitive Data card ("AI scan failed: names not masked") instead of quietly showing only the rule-based matches. A failed scan is no longer remembered as the session's result, so the next time you open the session it is scanned again. Sessions scanned by earlier versions are rescanned once
-• With AI PII detection on, Actvt no longer reports "insufficient disk space" for a model it has already downloaded
-• Actvt's window now keeps its size and position after you restart your Mac
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.2.8/Actvt-1.2.8.dmg" length="19369850" type="application/octet-stream" sparkle:edSignature="/CP/JhIpMDbXk4a2dFOKKZ10V2cR4VJkkblr4eORbownjdGspkWcJXpbSZoVZMlNM7/3xIIzWAhv0qbHaaj+Aw=="/>
         </item>
     </channel>
 </rss>
