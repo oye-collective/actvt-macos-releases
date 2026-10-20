@@ -3,6 +3,25 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.2</title>
+            <pubDate>Tue, 20 Oct 2026 09:42:55 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.2</sparkle:version>
+            <sparkle:shortVersionString>1.4.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[Improved
+• Long sessions now open on their latest turns. Scroll to the top, or press ⌘↑ at the first turn shown, to page back through earlier ones. Before, a session over 50 MB showed only its oldest turns and ended in "Transcript truncated"
+• Actvt uses less CPU while its window is hidden: background samples no longer redraw a window nobody can see
+
+Fixed
+• Long ids and millisecond timestamps in tool output are no longer flagged and masked as card numbers. A card number now needs a real card network's prefix, and existing sessions are re-scanned on the first launch
+• A transcript that changed within a second of Actvt reading it is now picked up, so its cost, tokens, search and sensitive-data counts no longer stay short
+• MCP's `system_uptime` and the diagnostics export now report how long this run of Actvt has been up, and its real memory footprint (the figure Activity Monitor shows)
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.2/Actvt-1.4.2.dmg" length="19565893" type="application/octet-stream" sparkle:edSignature="k55iCcG9AiJf0p8pzMpw4OI6wxh1Bho5cbXHN5ibW+c/XgB2pr7kxyBmUPHepTFNQVwCeUZuY3/dKbr7mCYwCA=="/>
+        </item>
+        <item>
             <title>1.4.1</title>
             <pubDate>Mon, 19 Oct 2026 09:30:12 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -39,33 +58,6 @@ Fixed
 • A clock that jumped forward once, then was corrected, no longer locks a paid licence while you're online. The next check with our server resets it
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.0/Actvt-1.4.0.dmg" length="19527928" type="application/octet-stream" sparkle:edSignature="kT08ZEyAHinxkf2Y7eAEJylfuREa6u02jKreZC4lsOA++GXhgPFsYBlJd4n2oR7YGL6nyNDJtDkQSONeFIXIBA=="/>
-        </item>
-        <item>
-            <title>1.3.0</title>
-            <pubDate>Wed, 14 Oct 2026 08:45:28 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.3.0</sparkle:version>
-            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• Loops card on the Overview (Premium): every loop agent on this Mac and on your Remote Sessions hosts, with what it is doing (working, asleep until a time, or overdue) and what its last tick said. An overdue loop is counted in the header and shown first. Click a row to open its session. Remote hosts need actvt-cli 0.7.0
-• actvt-cli loops: lists each loop agent's state from its own schedule, for scripts and watchdogs (`actvt-cli loops --json`)
-
-Improved
-• With AI PII detection on, Actvt launches lighter: the model now loads the first time you open a session, not at every launch
-• In new and updated sessions, on-device sensitive-data detection now catches secrets in the forms transcripts actually hold: .env lines, JSON keys, Bearer tokens, private keys, database URLs with passwords, and GitLab, Hugging Face and npm tokens
-
-Fixed
-• If your first launch was offline, or our server was briefly unreachable, you never got your free trial. Actvt now keeps asking until the server answers
-• Claude Code no longer loses its connection to Actvt's MCP server when the token changes, while Settings still said connected
-• When port 4096 was busy at launch, Actvt moved its MCP server to another port and every connected agent lost it. It now waits for 4096 to free up
-• The hotkey's second key is no longer also typed into the app in front
-• Remote agent notifications no longer arrive twice
-• Sessions are dated by their last message, so copied or restored transcripts no longer all look recent
-• The agent_usage_limits MCP tool now names each usage window by its length, so a weekly window is no longer called "session"
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.3.0/Actvt-1.3.0.dmg" length="19501271" type="application/octet-stream" sparkle:edSignature="E4e5qXucVgotVaYJgfkJ3or6N9JdxdV1Bi7vRvyGHFqLYCHW3TpHocCKkc3aMGMEDZArc/1HrbVXu34JHL/XAw=="/>
         </item>
     </channel>
 </rss>
