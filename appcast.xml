@@ -3,6 +3,28 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.3</title>
+            <pubDate>Thu, 22 Oct 2026 09:00:54 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.3</sparkle:version>
+            <sparkle:shortVersionString>1.4.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[Improved
+• Codex sessions now show the tools they actually ran (shell commands, file edits, MCP tools, web searches, images) and how many of them failed. Before, a session in Codex's code mode counted every call as one wrapper tool, with no errors
+• VoiceOver now reads icon-only buttons by what they do, such as "Overview", instead of their symbol's name ("Bar Chart With An X Axis")
+
+Fixed
+• The ⌥T shortcuts now work from any app and with Actvt's window closed: R and M take effect at once, and "." or a section key brings the window back
+• In a transcript, ⌥↓ and ⌥↑ now step through every turn instead of stopping after one, and ⌘↑ goes to the first turn again
+• Pins and session names are no longer erased when a session folder is briefly unreadable, for example an external drive that isn't mounted
+• An agent re-run in a loop now notifies when each run finishes, not about one run in three
+• Notifications from a remote machine keep arriving after that machine's notification queue starts over (update actvt-cli on the remote machine too)
+• In the session list, each row now sits under the date header that matches the time it shows
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.3/Actvt-1.4.3.dmg" length="19573559" type="application/octet-stream" sparkle:edSignature="K9ehShbCCX+NzZ4NzfJVj9hdop8fgoLLPtN3MJiz535heSD820S8JnWm7WHjoXjniRudO2RIJY0sRHzm0ocRAQ=="/>
+        </item>
+        <item>
             <title>1.4.2</title>
             <pubDate>Tue, 20 Oct 2026 09:42:55 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -37,27 +59,6 @@ Fixed
 • When Actvt's built-in sensitive-data rules improve, sessions counted with the older rules are re-scanned, so the Overview's sensitive-data figures and filters reflect the new rules without waiting for each transcript to change
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.1/Actvt-1.4.1.dmg" length="19563396" type="application/octet-stream" sparkle:edSignature="UYRrcrgLCv+tMDoakKSK2clMwWEy3JgELFN0djXVqi8Cu2w4FgTcgEQb5lpnzHNa61Mq8DTVqMjzvqiLzkgdDw=="/>
-        </item>
-        <item>
-            <title>1.4.0</title>
-            <pubDate>Fri, 16 Oct 2026 08:12:37 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.0</sparkle:version>
-            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• A session's cost and usage now stay in your dashboards and spend tools after Claude Code deletes its transcript (by default after 30 days), so 90 days and All time keep counting them. The deleted text itself is no longer kept or searchable
-• With AI PII detection on, the Sensitive Data card shows how much of a long session the AI scan has covered ("AI scan: N of M turns")
-
-Improved
-• With AI PII detection on, opening a long session no longer runs the model over the whole transcript at 3–4 cores for minutes. Actvt now scans the turns you're reading, as you read them, saves what it has scanned, and stops when you leave the session
-• Scrolling the session list and transcripts is much smoother: the once-a-second metrics update no longer redraws the agent views, and session rows are lighter to draw
-
-Fixed
-• A clock that jumped forward once, then was corrected, no longer locks a paid licence while you're online. The next check with our server resets it
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.0/Actvt-1.4.0.dmg" length="19527928" type="application/octet-stream" sparkle:edSignature="kT08ZEyAHinxkf2Y7eAEJylfuREa6u02jKreZC4lsOA++GXhgPFsYBlJd4n2oR7YGL6nyNDJtDkQSONeFIXIBA=="/>
         </item>
     </channel>
 </rss>
