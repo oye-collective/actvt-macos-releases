@@ -3,6 +3,26 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.4</title>
+            <pubDate>Fri, 23 Oct 2026 14:17:52 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.4</sparkle:version>
+            <sparkle:shortVersionString>1.4.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• The Claude and Codex plan-limit bars now show a tick where an even pace would be by now, and say "on pace" or "ahead of pace". A bar turns amber when you're using the allowance faster than the clock and less than half is left
+
+Improved
+• Updates now install on their own once Actvt is out of sight, instead of waiting for you to quit it. Actvt comes back in the menu bar with its window closed, and the app you were using stays in front
+• While an agent works and Actvt's window is hidden, Actvt uses about a third less CPU
+
+Fixed
+• In the session list, a row's time now always matches its date header: a session from yesterday afternoon reads "yesterday", not "20 hr ago", and one from two days ago no longer reads "yesterday"
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.4/Actvt-1.4.4.dmg" length="19606648" type="application/octet-stream" sparkle:edSignature="3uOZ9AcDNkSA64SzW0FQYx4BZPJ/sGQ0SwyGccx/auGv0R0B7S9GQo+zSZzZj2qVVmQeJnioa4I35e7ja+d/Dg=="/>
+        </item>
+        <item>
             <title>1.4.3</title>
             <pubDate>Thu, 22 Oct 2026 09:00:54 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -42,23 +62,6 @@ Fixed
 • MCP's `system_uptime` and the diagnostics export now report how long this run of Actvt has been up, and its real memory footprint (the figure Activity Monitor shows)
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.2/Actvt-1.4.2.dmg" length="19565893" type="application/octet-stream" sparkle:edSignature="k55iCcG9AiJf0p8pzMpw4OI6wxh1Bho5cbXHN5ibW+c/XgB2pr7kxyBmUPHepTFNQVwCeUZuY3/dKbr7mCYwCA=="/>
-        </item>
-        <item>
-            <title>1.4.1</title>
-            <pubDate>Mon, 19 Oct 2026 09:30:12 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.1</sparkle:version>
-            <sparkle:shortVersionString>1.4.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[Improved
-• An agent writing to one session no longer redraws every row of the session list, so Actvt uses less CPU while your agents work with the window open
-
-Fixed
-• A loop agent whose session has ended now reads "Ended" in the Overview's Loops card and in `actvt-cli loops`, instead of staying "Overdue" for ever. Ended loops drop out after a day
-• When Actvt's built-in sensitive-data rules improve, sessions counted with the older rules are re-scanned, so the Overview's sensitive-data figures and filters reflect the new rules without waiting for each transcript to change
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.1/Actvt-1.4.1.dmg" length="19563396" type="application/octet-stream" sparkle:edSignature="UYRrcrgLCv+tMDoakKSK2clMwWEy3JgELFN0djXVqi8Cu2w4FgTcgEQb5lpnzHNa61Mq8DTVqMjzvqiLzkgdDw=="/>
         </item>
     </channel>
 </rss>
