@@ -3,6 +3,23 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.5</title>
+            <pubDate>Mon, 26 Oct 2026 10:42:22 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.5</sparkle:version>
+            <sparkle:shortVersionString>1.4.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[Improved
+• The welcome flow's agent step now asks whether to show your agent sessions, and turns them on when you finish. It names the agents Actvt found on this Mac, pi included. Nothing leaves your Mac
+• More secrets are recognised: values assigned to names like SECRET_KEY, STRIPE_SECRET_KEY, PRIVATE_KEY, SIGNING_KEY and ENCRYPTION_KEY are now flagged and masked
+
+Fixed
+• Search no longer shows secrets. Session text is masked when Actvt indexes it, so keyword search, meaning search and agents searching through Actvt's MCP see a mask instead of a key or password. Searching for a secret's value no longer finds its session; its name (STRIPE_SECRET_KEY, password) still does. The first launch after updating re-indexes your sessions once
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.5/Actvt-1.4.5.dmg" length="19621120" type="application/octet-stream" sparkle:edSignature="BpD8926W4xHz1wYKSOzrFG8bsYmh+lXxS6LctdzcQ5e8vkpX6UfYjH8nkr7d7SVkrjdKhoqaqXN3tG2N1Xx5Bg=="/>
+        </item>
+        <item>
             <title>1.4.4</title>
             <pubDate>Fri, 23 Oct 2026 14:17:52 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -43,25 +60,6 @@ Fixed
 • In the session list, each row now sits under the date header that matches the time it shows
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.3/Actvt-1.4.3.dmg" length="19573559" type="application/octet-stream" sparkle:edSignature="K9ehShbCCX+NzZ4NzfJVj9hdop8fgoLLPtN3MJiz535heSD820S8JnWm7WHjoXjniRudO2RIJY0sRHzm0ocRAQ=="/>
-        </item>
-        <item>
-            <title>1.4.2</title>
-            <pubDate>Tue, 20 Oct 2026 09:42:55 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.2</sparkle:version>
-            <sparkle:shortVersionString>1.4.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[Improved
-• Long sessions now open on their latest turns. Scroll to the top, or press ⌘↑ at the first turn shown, to page back through earlier ones. Before, a session over 50 MB showed only its oldest turns and ended in "Transcript truncated"
-• Actvt uses less CPU while its window is hidden: background samples no longer redraw a window nobody can see
-
-Fixed
-• Long ids and millisecond timestamps in tool output are no longer flagged and masked as card numbers. A card number now needs a real card network's prefix, and existing sessions are re-scanned on the first launch
-• A transcript that changed within a second of Actvt reading it is now picked up, so its cost, tokens, search and sensitive-data counts no longer stay short
-• MCP's `system_uptime` and the diagnostics export now report how long this run of Actvt has been up, and its real memory footprint (the figure Activity Monitor shows)
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.2/Actvt-1.4.2.dmg" length="19565893" type="application/octet-stream" sparkle:edSignature="k55iCcG9AiJf0p8pzMpw4OI6wxh1Bho5cbXHN5ibW+c/XgB2pr7kxyBmUPHepTFNQVwCeUZuY3/dKbr7mCYwCA=="/>
         </item>
     </channel>
 </rss>
