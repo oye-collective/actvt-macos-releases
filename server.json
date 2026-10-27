@@ -3,7 +3,7 @@
   "name": "io.actvt/actvt",
   "title": "Actvt",
   "description": "Built into the Actvt Mac app: live system metrics, ports, and Claude Code, Codex and pi sessions.",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "websiteUrl": "https://actvt.io",
   "repository": {
     "url": "https://github.com/oye-collective/actvt-macos-releases",
