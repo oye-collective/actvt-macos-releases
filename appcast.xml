@@ -3,6 +3,30 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.6</title>
+            <pubDate>Tue, 27 Oct 2026 10:12:48 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.6</sparkle:version>
+            <sparkle:shortVersionString>1.4.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• Where it went: a new Overview card ranks the priciest responses in the range, across Claude Code, Codex and pi, and shows which MCP servers, Skills and re-read files take the most room in your sessions. Each turn opens its session. Nothing leaves your Mac. The first launch after updating re-indexes your sessions once
+
+Improved
+• Secrets in what an agent was asked to do are now found too: a key in a shell command, a file the agent wrote or an MCP call's arguments is flagged and masked like any other
+• Placeholders such as your-secret-key-here no longer count as secrets
+• Current Claude, Codex and GPT models are priced and show their context window from the first launch, even offline
+• The Overview's Loops card uses far less CPU and memory while it is open
+
+Fixed
+• Keyboard shortcuts no longer stop working after the first one that brings Actvt forward
+• An action key pressed with ⌥ still held now acts, instead of typing a character into the app in front
+• Settings… in the menu bar opens Settings even after the main window has been closed
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.6/Actvt-1.4.6.dmg" length="19673775" type="application/octet-stream" sparkle:edSignature="XKP9E58PHhXZzgeUJ3pz1Gp+hD7B20cYu2RbjW3vbGdF/8NwqljJmoTcYDXVdxOAV2awCoRkWpN8mJqfUX9VAQ=="/>
+        </item>
+        <item>
             <title>1.4.5</title>
             <pubDate>Mon, 26 Oct 2026 10:42:22 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -38,28 +62,6 @@ Fixed
 • In the session list, a row's time now always matches its date header: a session from yesterday afternoon reads "yesterday", not "20 hr ago", and one from two days ago no longer reads "yesterday"
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.4/Actvt-1.4.4.dmg" length="19606648" type="application/octet-stream" sparkle:edSignature="3uOZ9AcDNkSA64SzW0FQYx4BZPJ/sGQ0SwyGccx/auGv0R0B7S9GQo+zSZzZj2qVVmQeJnioa4I35e7ja+d/Dg=="/>
-        </item>
-        <item>
-            <title>1.4.3</title>
-            <pubDate>Thu, 22 Oct 2026 09:00:54 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.3</sparkle:version>
-            <sparkle:shortVersionString>1.4.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[Improved
-• Codex sessions now show the tools they actually ran (shell commands, file edits, MCP tools, web searches, images) and how many of them failed. Before, a session in Codex's code mode counted every call as one wrapper tool, with no errors
-• VoiceOver now reads icon-only buttons by what they do, such as "Overview", instead of their symbol's name ("Bar Chart With An X Axis")
-
-Fixed
-• The ⌥T shortcuts now work from any app and with Actvt's window closed: R and M take effect at once, and "." or a section key brings the window back
-• In a transcript, ⌥↓ and ⌥↑ now step through every turn instead of stopping after one, and ⌘↑ goes to the first turn again
-• Pins and session names are no longer erased when a session folder is briefly unreadable, for example an external drive that isn't mounted
-• An agent re-run in a loop now notifies when each run finishes, not about one run in three
-• Notifications from a remote machine keep arriving after that machine's notification queue starts over (update actvt-cli on the remote machine too)
-• In the session list, each row now sits under the date header that matches the time it shows
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.3/Actvt-1.4.3.dmg" length="19573559" type="application/octet-stream" sparkle:edSignature="K9ehShbCCX+NzZ4NzfJVj9hdop8fgoLLPtN3MJiz535heSD820S8JnWm7WHjoXjniRudO2RIJY0sRHzm0ocRAQ=="/>
         </item>
     </channel>
 </rss>
