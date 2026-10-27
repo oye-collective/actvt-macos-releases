@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-27",
   "currency": "USD",
   "perMillionTokens": {
     "gpt-6-astra": {
@@ -16,6 +16,13 @@
       "cacheWrite5m": 0.0,
       "cacheWrite1h": 0.0,
       "cacheRead": 0.1
+    },
+    "gpt-6.1-terra": {
+      "input": 1.0,
+      "output": 5.0,
+      "cacheWrite5m": 0.0,
+      "cacheWrite1h": 0.0,
+      "cacheRead": 0.05
     },
     "gpt-6-sol": {
       "input": 2.0,
