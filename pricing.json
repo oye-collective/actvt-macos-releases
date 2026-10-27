@@ -347,5 +347,17 @@
     "claude-sonnet-4": 200000,
     "claude-haiku-4-5": 200000,
     "claude-haiku-3-5": 200000
+  },
+  "longPrompt": {
+    "claude-haiku-5-5": {
+      "aboveTokens": 100000,
+      "rate": {
+        "input": 0.5,
+        "output": 2.5,
+        "cacheWrite5m": 0.625,
+        "cacheWrite1h": 1.0,
+        "cacheRead": 0.05
+      }
+    }
   }
 }
