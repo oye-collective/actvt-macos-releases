@@ -3,6 +3,30 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.7</title>
+            <pubDate>Wed, 28 Oct 2026 15:19:14 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.7</sparkle:version>
+            <sparkle:shortVersionString>1.4.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• Presentable Mode hides dollar amounts, project names, branches and transcripts, so you can share your screen or record a demo without showing your work. Turn it on from the menu bar menu or Settings → Appearance
+• The share card has a new look and shows totals only
+
+Improved
+• Agents can read long transcripts through Actvt's MCP tools a section at a time
+• Actvt uses less CPU while its window is hidden and an agent is writing
+• Remote hosts on an older actvt-cli are now told an update is available
+
+Fixed
+• The Network card counts every active connection, so a laptop on Ethernet or a Mac mini on Wi-Fi shows its real traffic
+• MCP filters given whole numbers, such as a minimum cost of 100 or a date, now filter instead of being ignored
+• Claude Haiku 5.5 prompts over 100K tokens are priced at the long-prompt rate
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.7/Actvt-1.4.7.dmg" length="19730307" type="application/octet-stream" sparkle:edSignature="rz7r3w0SKyDgD1QfBsQYNh+c6KYM7dnVfry/GeWDui4cCI5ENcgiy2XSW/GKA32wOB/hojoW5Ng7mzJpVjC0Dw=="/>
+        </item>
+        <item>
             <title>1.4.6</title>
             <pubDate>Tue, 27 Oct 2026 10:12:48 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -42,26 +66,6 @@ Fixed
 • Search no longer shows secrets. Session text is masked when Actvt indexes it, so keyword search, meaning search and agents searching through Actvt's MCP see a mask instead of a key or password. Searching for a secret's value no longer finds its session; its name (STRIPE_SECRET_KEY, password) still does. The first launch after updating re-indexes your sessions once
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.5/Actvt-1.4.5.dmg" length="19621120" type="application/octet-stream" sparkle:edSignature="BpD8926W4xHz1wYKSOzrFG8bsYmh+lXxS6LctdzcQ5e8vkpX6UfYjH8nkr7d7SVkrjdKhoqaqXN3tG2N1Xx5Bg=="/>
-        </item>
-        <item>
-            <title>1.4.4</title>
-            <pubDate>Fri, 23 Oct 2026 14:17:52 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.4</sparkle:version>
-            <sparkle:shortVersionString>1.4.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• The Claude and Codex plan-limit bars now show a tick where an even pace would be by now, and say "on pace" or "ahead of pace". A bar turns amber when you're using the allowance faster than the clock and less than half is left
-
-Improved
-• Updates now install on their own once Actvt is out of sight, instead of waiting for you to quit it. Actvt comes back in the menu bar with its window closed, and the app you were using stays in front
-• While an agent works and Actvt's window is hidden, Actvt uses about a third less CPU
-
-Fixed
-• In the session list, a row's time now always matches its date header: a session from yesterday afternoon reads "yesterday", not "20 hr ago", and one from two days ago no longer reads "yesterday"
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.4/Actvt-1.4.4.dmg" length="19606648" type="application/octet-stream" sparkle:edSignature="3uOZ9AcDNkSA64SzW0FQYx4BZPJ/sGQ0SwyGccx/auGv0R0B7S9GQo+zSZzZj2qVVmQeJnioa4I35e7ja+d/Dg=="/>
         </item>
     </channel>
 </rss>
