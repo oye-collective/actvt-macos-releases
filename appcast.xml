@@ -3,6 +3,27 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.8</title>
+            <pubDate>Fri, 30 Oct 2026 08:25:07 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.8</sparkle:version>
+            <sparkle:shortVersionString>1.4.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• "Where it went" on the Overview now prices cache rebuilds, the turns where an agent paid to write its whole context again, and says whether the cache had expired or the context changed. Show me › opens the turns
+
+Improved
+• Actvt does less work while its window is hidden and Remote Sessions are polling
+• Suggest tailnet hosts no longer starts the Tailscale app to read your tailnet, so it can't reconnect a VPN you switched off. Suggestions now need the standalone tailscale CLI
+
+Fixed
+• Claude Code compactions are now counted: the inspector and context meter show "compacted N times", the transcript marks where each one happened, and agents reading a session over MCP get the real count
+• In a session over 25 MB, ⌘↑ and ⌘↓ go to the first and last turn instead of stopping partway
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.8/Actvt-1.4.8.dmg" length="19765140" type="application/octet-stream" sparkle:edSignature="iHw5AgkxkhcwVRgNw37B+cZu6wASiRDh0wxBlRg1bmNgFUIYWlLcyWhUewN9moIR7nY4rta46nWd3zhetaNfDw=="/>
+        </item>
+        <item>
             <title>1.4.7</title>
             <pubDate>Wed, 28 Oct 2026 15:19:14 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -49,23 +70,6 @@ Fixed
 • Settings… in the menu bar opens Settings even after the main window has been closed
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.6/Actvt-1.4.6.dmg" length="19673775" type="application/octet-stream" sparkle:edSignature="XKP9E58PHhXZzgeUJ3pz1Gp+hD7B20cYu2RbjW3vbGdF/8NwqljJmoTcYDXVdxOAV2awCoRkWpN8mJqfUX9VAQ=="/>
-        </item>
-        <item>
-            <title>1.4.5</title>
-            <pubDate>Mon, 26 Oct 2026 10:42:22 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.5</sparkle:version>
-            <sparkle:shortVersionString>1.4.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[Improved
-• The welcome flow's agent step now asks whether to show your agent sessions, and turns them on when you finish. It names the agents Actvt found on this Mac, pi included. Nothing leaves your Mac
-• More secrets are recognised: values assigned to names like SECRET_KEY, STRIPE_SECRET_KEY, PRIVATE_KEY, SIGNING_KEY and ENCRYPTION_KEY are now flagged and masked
-
-Fixed
-• Search no longer shows secrets. Session text is masked when Actvt indexes it, so keyword search, meaning search and agents searching through Actvt's MCP see a mask instead of a key or password. Searching for a secret's value no longer finds its session; its name (STRIPE_SECRET_KEY, password) still does. The first launch after updating re-indexes your sessions once
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.5/Actvt-1.4.5.dmg" length="19621120" type="application/octet-stream" sparkle:edSignature="BpD8926W4xHz1wYKSOzrFG8bsYmh+lXxS6LctdzcQ5e8vkpX6UfYjH8nkr7d7SVkrjdKhoqaqXN3tG2N1Xx5Bg=="/>
         </item>
     </channel>
 </rss>
