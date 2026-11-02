@@ -3,6 +3,24 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.9</title>
+            <pubDate>Mon, 02 Nov 2026 11:23:14 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.9</sparkle:version>
+            <sparkle:shortVersionString>1.4.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• On Apple Silicon the CPU card shows the chip's power in watts. Hover it for CPU, GPU and Neural Engine, and agents reading Actvt over MCP get the same numbers in the snapshot and in history
+
+Fixed
+• Claude Code background jobs and forked sessions no longer count the parent conversation's spend a second time
+• A Claude Code session resumed at the prompt, a terminal running a background copy, and a background handoff now show the right live state
+• Find (⌘F) in a session over 25 MB searches the whole session, not only the part on screen, and ⌘G opens each match
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.9/Actvt-1.4.9.dmg" length="19784421" type="application/octet-stream" sparkle:edSignature="ly3r+xov+WJxvKD01tFXgQNe0eJWAWBwntYTQibp9vd4Y71C/ex+hjsbluQZbnRGdOhSBRoUmMhjwkrHX7qfDA=="/>
+        </item>
+        <item>
             <title>1.4.8</title>
             <pubDate>Fri, 30 Oct 2026 08:25:07 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -46,30 +64,6 @@ Fixed
 • Claude Haiku 5.5 prompts over 100K tokens are priced at the long-prompt rate
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.7/Actvt-1.4.7.dmg" length="19730307" type="application/octet-stream" sparkle:edSignature="rz7r3w0SKyDgD1QfBsQYNh+c6KYM7dnVfry/GeWDui4cCI5ENcgiy2XSW/GKA32wOB/hojoW5Ng7mzJpVjC0Dw=="/>
-        </item>
-        <item>
-            <title>1.4.6</title>
-            <pubDate>Tue, 27 Oct 2026 10:12:48 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.6</sparkle:version>
-            <sparkle:shortVersionString>1.4.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• Where it went: a new Overview card ranks the priciest responses in the range, across Claude Code, Codex and pi, and shows which MCP servers, Skills and re-read files take the most room in your sessions. Each turn opens its session. Nothing leaves your Mac. The first launch after updating re-indexes your sessions once
-
-Improved
-• Secrets in what an agent was asked to do are now found too: a key in a shell command, a file the agent wrote or an MCP call's arguments is flagged and masked like any other
-• Placeholders such as your-secret-key-here no longer count as secrets
-• Current Claude, Codex and GPT models are priced and show their context window from the first launch, even offline
-• The Overview's Loops card uses far less CPU and memory while it is open
-
-Fixed
-• Keyboard shortcuts no longer stop working after the first one that brings Actvt forward
-• An action key pressed with ⌥ still held now acts, instead of typing a character into the app in front
-• Settings… in the menu bar opens Settings even after the main window has been closed
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.6/Actvt-1.4.6.dmg" length="19673775" type="application/octet-stream" sparkle:edSignature="XKP9E58PHhXZzgeUJ3pz1Gp+hD7B20cYu2RbjW3vbGdF/8NwqljJmoTcYDXVdxOAV2awCoRkWpN8mJqfUX9VAQ=="/>
         </item>
     </channel>
 </rss>
