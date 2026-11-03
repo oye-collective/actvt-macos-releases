@@ -3,6 +3,26 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.10</title>
+            <pubDate>Tue, 03 Nov 2026 13:52:45 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.10</sparkle:version>
+            <sparkle:shortVersionString>1.4.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• Actvt alerts you as a Claude or Codex plan limit nears, at 80% by default, and again when it's reached. Choose the level, or turn it off, under Settings > General > Notifications
+• A long session on another machine now reads back to its first prompt: scroll to the top, or press ⌘↑. That machine needs actvt-cli 0.10.0, and Settings offers the update
+
+Improved
+• Agents reading Actvt over MCP get the same answers in about 40% fewer tokens
+
+Fixed
+• A session folder Actvt briefly can't read, such as an unmounted drive, no longer drops its sessions from search and then re-indexes all of them
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.10/Actvt-1.4.10.dmg" length="19810100" type="application/octet-stream" sparkle:edSignature="W+n57UaRZAht+DEJbIxwl8E6GagQ+ICAthBg+cdORx9CeNdeEcKlzH3V24MI+ohq3EibThmwXbLu/U/5hv+SBw=="/>
+        </item>
+        <item>
             <title>1.4.9</title>
             <pubDate>Mon, 02 Nov 2026 11:23:14 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -40,30 +60,6 @@ Fixed
 • In a session over 25 MB, ⌘↑ and ⌘↓ go to the first and last turn instead of stopping partway
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.8/Actvt-1.4.8.dmg" length="19765140" type="application/octet-stream" sparkle:edSignature="iHw5AgkxkhcwVRgNw37B+cZu6wASiRDh0wxBlRg1bmNgFUIYWlLcyWhUewN9moIR7nY4rta46nWd3zhetaNfDw=="/>
-        </item>
-        <item>
-            <title>1.4.7</title>
-            <pubDate>Wed, 28 Oct 2026 15:19:14 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.7</sparkle:version>
-            <sparkle:shortVersionString>1.4.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• Presentable Mode hides dollar amounts, project names, branches and transcripts, so you can share your screen or record a demo without showing your work. Turn it on from the menu bar menu or Settings → Appearance
-• The share card has a new look and shows totals only
-
-Improved
-• Agents can read long transcripts through Actvt's MCP tools a section at a time
-• Actvt uses less CPU while its window is hidden and an agent is writing
-• Remote hosts on an older actvt-cli are now told an update is available
-
-Fixed
-• The Network card counts every active connection, so a laptop on Ethernet or a Mac mini on Wi-Fi shows its real traffic
-• MCP filters given whole numbers, such as a minimum cost of 100 or a date, now filter instead of being ignored
-• Claude Haiku 5.5 prompts over 100K tokens are priced at the long-prompt rate
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.7/Actvt-1.4.7.dmg" length="19730307" type="application/octet-stream" sparkle:edSignature="rz7r3w0SKyDgD1QfBsQYNh+c6KYM7dnVfry/GeWDui4cCI5ENcgiy2XSW/GKA32wOB/hojoW5Ng7mzJpVjC0Dw=="/>
         </item>
     </channel>
 </rss>
