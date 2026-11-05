@@ -3,6 +3,25 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.11</title>
+            <pubDate>Thu, 05 Nov 2026 15:00:50 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.11</sparkle:version>
+            <sparkle:shortVersionString>1.4.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• Actvt now knows the moment a Claude Code session needs you. A permission prompt or a question shows the session as waiting within seconds, not after 90 seconds of quiet, and a long, quiet tool call no longer reads as your turn. This uses the status newer Claude Code versions write; older ones keep the 90-second rule
+
+Fixed
+• Codex sub-agents now appear inside the session that started them, instead of as separate sessions
+• pi sub-agents (pi-subagents) are now counted: their tokens and cost belong to the session that started them, and were missing before
+• Suggest tailnet hosts now says why it lists nothing on a Mac that has the Tailscale app but no Tailscale command-line tool, and points to adding a machine by name
+• Machines added under Remote Sessions need actvt-cli 0.10.1 to fold their sub-agents the same way, and Settings offers the update
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.11/Actvt-1.4.11.dmg" length="19853087" type="application/octet-stream" sparkle:edSignature="veA4QIcebk6Uj0NwqPESW+KK7pfzVWESsUuicRKPCNDIEI4D8G0eh2o7CwB6mvEbHj/uURrGhFPu7B1NVGNnDw=="/>
+        </item>
+        <item>
             <title>1.4.10</title>
             <pubDate>Tue, 03 Nov 2026 13:52:45 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -39,27 +58,6 @@ Fixed
 • Find (⌘F) in a session over 25 MB searches the whole session, not only the part on screen, and ⌘G opens each match
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.9/Actvt-1.4.9.dmg" length="19784421" type="application/octet-stream" sparkle:edSignature="ly3r+xov+WJxvKD01tFXgQNe0eJWAWBwntYTQibp9vd4Y71C/ex+hjsbluQZbnRGdOhSBRoUmMhjwkrHX7qfDA=="/>
-        </item>
-        <item>
-            <title>1.4.8</title>
-            <pubDate>Fri, 30 Oct 2026 08:25:07 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.8</sparkle:version>
-            <sparkle:shortVersionString>1.4.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• "Where it went" on the Overview now prices cache rebuilds, the turns where an agent paid to write its whole context again, and says whether the cache had expired or the context changed. Show me › opens the turns
-
-Improved
-• Actvt does less work while its window is hidden and Remote Sessions are polling
-• Suggest tailnet hosts no longer starts the Tailscale app to read your tailnet, so it can't reconnect a VPN you switched off. Suggestions now need the standalone tailscale CLI
-
-Fixed
-• Claude Code compactions are now counted: the inspector and context meter show "compacted N times", the transcript marks where each one happened, and agents reading a session over MCP get the real count
-• In a session over 25 MB, ⌘↑ and ⌘↓ go to the first and last turn instead of stopping partway
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.8/Actvt-1.4.8.dmg" length="19765140" type="application/octet-stream" sparkle:edSignature="iHw5AgkxkhcwVRgNw37B+cZu6wASiRDh0wxBlRg1bmNgFUIYWlLcyWhUewN9moIR7nY4rta46nWd3zhetaNfDw=="/>
         </item>
     </channel>
 </rss>
