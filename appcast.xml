@@ -3,6 +3,26 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.12</title>
+            <pubDate>Mon, 09 Nov 2026 15:40:33 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.12</sparkle:version>
+            <sparkle:shortVersionString>1.4.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• The session browser totals what you filtered: a line under the filters shows how many sessions match, what they cost together, their tokens and active time, and how many have no price yet. Select it to copy it. Presentable Mode hides the dollars
+• Filter sessions by git branch
+
+Improved
+• Codex sessions now show their git branch, which Codex records whenever it runs in a repository. The first launch re-reads your sessions once to fill it in for older ones
+
+Fixed
+• A new Claude Code session that stops at a permission prompt in its first seconds now gets its "waiting" alert. Before, it could stay silent if Actvt hadn't looked at the session yet
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.12/Actvt-1.4.12.dmg" length="19858496" type="application/octet-stream" sparkle:edSignature="GAvdNASdDz6ito2YzjwSt5rML0kgs8KhmmYVZm9rPvZ1GLJDYUk74NxoQA0eRzcLHAaVnDbjyU8M16HcBWkDAA=="/>
+        </item>
+        <item>
             <title>1.4.11</title>
             <pubDate>Thu, 05 Nov 2026 15:00:50 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -40,24 +60,6 @@ Fixed
 • A session folder Actvt briefly can't read, such as an unmounted drive, no longer drops its sessions from search and then re-indexes all of them
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.10/Actvt-1.4.10.dmg" length="19810100" type="application/octet-stream" sparkle:edSignature="W+n57UaRZAht+DEJbIxwl8E6GagQ+ICAthBg+cdORx9CeNdeEcKlzH3V24MI+ohq3EibThmwXbLu/U/5hv+SBw=="/>
-        </item>
-        <item>
-            <title>1.4.9</title>
-            <pubDate>Mon, 02 Nov 2026 11:23:14 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.9</sparkle:version>
-            <sparkle:shortVersionString>1.4.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• On Apple Silicon the CPU card shows the chip's power in watts. Hover it for CPU, GPU and Neural Engine, and agents reading Actvt over MCP get the same numbers in the snapshot and in history
-
-Fixed
-• Claude Code background jobs and forked sessions no longer count the parent conversation's spend a second time
-• A Claude Code session resumed at the prompt, a terminal running a background copy, and a background handoff now show the right live state
-• Find (⌘F) in a session over 25 MB searches the whole session, not only the part on screen, and ⌘G opens each match
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.9/Actvt-1.4.9.dmg" length="19784421" type="application/octet-stream" sparkle:edSignature="ly3r+xov+WJxvKD01tFXgQNe0eJWAWBwntYTQibp9vd4Y71C/ex+hjsbluQZbnRGdOhSBRoUmMhjwkrHX7qfDA=="/>
         </item>
     </channel>
 </rss>
