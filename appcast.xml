@@ -3,6 +3,19 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.13</title>
+            <pubDate>Tue, 10 Nov 2026 10:29:28 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.13</sparkle:version>
+            <sparkle:shortVersionString>1.4.13</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[Fixed
+• Presentable Mode now hides your MCP server and Skill names in the Overview. In "Where it went", servers and Skills read "Server 1" and "Skill 1", and so do servers you set up but never called. MCP tools in Tool usage carry the same masked server name. Sizes, shares and call counts stay as they are
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.13/Actvt-1.4.13.dmg" length="19879621" type="application/octet-stream" sparkle:edSignature="ZDLLznHPLWjNNLCVhIIh4ppCv4HcDAf2VoV/Fu7RwD90FlCTNf4hYfBsyzpPLmc60MlWYWRqhfVSZbwiUKPQBw=="/>
+        </item>
+        <item>
             <title>1.4.12</title>
             <pubDate>Mon, 09 Nov 2026 15:40:33 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -40,26 +53,6 @@ Fixed
 • Machines added under Remote Sessions need actvt-cli 0.10.1 to fold their sub-agents the same way, and Settings offers the update
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.11/Actvt-1.4.11.dmg" length="19853087" type="application/octet-stream" sparkle:edSignature="veA4QIcebk6Uj0NwqPESW+KK7pfzVWESsUuicRKPCNDIEI4D8G0eh2o7CwB6mvEbHj/uURrGhFPu7B1NVGNnDw=="/>
-        </item>
-        <item>
-            <title>1.4.10</title>
-            <pubDate>Tue, 03 Nov 2026 13:52:45 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.10</sparkle:version>
-            <sparkle:shortVersionString>1.4.10</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• Actvt alerts you as a Claude or Codex plan limit nears, at 80% by default, and again when it's reached. Choose the level, or turn it off, under Settings > General > Notifications
-• A long session on another machine now reads back to its first prompt: scroll to the top, or press ⌘↑. That machine needs actvt-cli 0.10.0, and Settings offers the update
-
-Improved
-• Agents reading Actvt over MCP get the same answers in about 40% fewer tokens
-
-Fixed
-• A session folder Actvt briefly can't read, such as an unmounted drive, no longer drops its sessions from search and then re-indexes all of them
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.10/Actvt-1.4.10.dmg" length="19810100" type="application/octet-stream" sparkle:edSignature="W+n57UaRZAht+DEJbIxwl8E6GagQ+ICAthBg+cdORx9CeNdeEcKlzH3V24MI+ohq3EibThmwXbLu/U/5hv+SBw=="/>
         </item>
     </channel>
 </rss>
