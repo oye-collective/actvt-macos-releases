@@ -3,6 +3,22 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.14</title>
+            <pubDate>Wed, 11 Nov 2026 14:57:50 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.14</sparkle:version>
+            <sparkle:shortVersionString>1.4.14</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• When Claude Code or Codex is having an outage, Actvt says so. A line on the limits card and in the menu names the incident and links to it, and the "errors are piling up" alert tells you when the problem is on the provider's side, then again when it's over. It reads Anthropic's and OpenAI's public status pages, with no account and nothing about you sent. Turn it off in Settings > Agents
+
+Improved
+• Privacy detection now catches eight more kinds of secret pasted into a prompt: Slack and Discord webhook URLs, Google OAuth tokens, and PyPI, SendGrid, Twilio, Telegram bot and 1Password service-account tokens. Your existing sessions are checked again once, in the background, after the update
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.14/Actvt-1.4.14.dmg" length="19953613" type="application/octet-stream" sparkle:edSignature="DMvZ8CotcuKPU2o0BVDGBXtHPbJ0CAEsirIl+wj9kPHRn9ojtNmgfw8WjnJO5h7qNjd5kvHdmKsLeHQbcCSRCQ=="/>
+        </item>
+        <item>
             <title>1.4.13</title>
             <pubDate>Tue, 10 Nov 2026 10:29:28 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -34,25 +50,6 @@ Fixed
 • A new Claude Code session that stops at a permission prompt in its first seconds now gets its "waiting" alert. Before, it could stay silent if Actvt hadn't looked at the session yet
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.12/Actvt-1.4.12.dmg" length="19858496" type="application/octet-stream" sparkle:edSignature="GAvdNASdDz6ito2YzjwSt5rML0kgs8KhmmYVZm9rPvZ1GLJDYUk74NxoQA0eRzcLHAaVnDbjyU8M16HcBWkDAA=="/>
-        </item>
-        <item>
-            <title>1.4.11</title>
-            <pubDate>Thu, 05 Nov 2026 15:00:50 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.11</sparkle:version>
-            <sparkle:shortVersionString>1.4.11</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• Actvt now knows the moment a Claude Code session needs you. A permission prompt or a question shows the session as waiting within seconds, not after 90 seconds of quiet, and a long, quiet tool call no longer reads as your turn. This uses the status newer Claude Code versions write; older ones keep the 90-second rule
-
-Fixed
-• Codex sub-agents now appear inside the session that started them, instead of as separate sessions
-• pi sub-agents (pi-subagents) are now counted: their tokens and cost belong to the session that started them, and were missing before
-• Suggest tailnet hosts now says why it lists nothing on a Mac that has the Tailscale app but no Tailscale command-line tool, and points to adding a machine by name
-• Machines added under Remote Sessions need actvt-cli 0.10.1 to fold their sub-agents the same way, and Settings offers the update
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.11/Actvt-1.4.11.dmg" length="19853087" type="application/octet-stream" sparkle:edSignature="veA4QIcebk6Uj0NwqPESW+KK7pfzVWESsUuicRKPCNDIEI4D8G0eh2o7CwB6mvEbHj/uURrGhFPu7B1NVGNnDw=="/>
         </item>
     </channel>
 </rss>
