@@ -3,6 +3,24 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.16</title>
+            <pubDate>Thu, 19 Nov 2026 12:39:57 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.16</sparkle:version>
+            <sparkle:shortVersionString>1.4.16</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• What your agents spend on your other machines now counts. Claude Code sessions on a Remote Sessions host go into the Overview's totals and history like the ones on this Mac, and a new card splits spend by machine. A session that's on both is counted once
+• Hosts need actvt-cli 0.11.0 for this, and the Overview names any machine that's still on an older one
+
+Improved
+• Long transcripts read several times faster, here and on your Remote Sessions hosts, so a long remote session opens sooner
+• Codex sessions on GPT-6.2 Astra and Sol are priced from the first launch
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.16/Actvt-1.4.16.dmg" length="20098400" type="application/octet-stream" sparkle:edSignature="9PNgbK27hRTzy503vdPBLTgwVnHDm+ez9nFRtMKOasELFApmJP5C+ZY00VYa9YQPQT2us7aEFLmZ1pYxgFLmDA=="/>
+        </item>
+        <item>
             <title>1.4.15</title>
             <pubDate>Mon, 16 Nov 2026 10:45:45 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -36,19 +54,6 @@ Improved
 • Privacy detection now catches eight more kinds of secret pasted into a prompt: Slack and Discord webhook URLs, Google OAuth tokens, and PyPI, SendGrid, Twilio, Telegram bot and 1Password service-account tokens. Your existing sessions are checked again once, in the background, after the update
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.14/Actvt-1.4.14.dmg" length="19953613" type="application/octet-stream" sparkle:edSignature="DMvZ8CotcuKPU2o0BVDGBXtHPbJ0CAEsirIl+wj9kPHRn9ojtNmgfw8WjnJO5h7qNjd5kvHdmKsLeHQbcCSRCQ=="/>
-        </item>
-        <item>
-            <title>1.4.13</title>
-            <pubDate>Tue, 10 Nov 2026 10:29:28 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.13</sparkle:version>
-            <sparkle:shortVersionString>1.4.13</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[Fixed
-• Presentable Mode now hides your MCP server and Skill names in the Overview. In "Where it went", servers and Skills read "Server 1" and "Skill 1", and so do servers you set up but never called. MCP tools in Tool usage carry the same masked server name. Sizes, shares and call counts stay as they are
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.13/Actvt-1.4.13.dmg" length="19879621" type="application/octet-stream" sparkle:edSignature="ZDLLznHPLWjNNLCVhIIh4ppCv4HcDAf2VoV/Fu7RwD90FlCTNf4hYfBsyzpPLmc60MlWYWRqhfVSZbwiUKPQBw=="/>
         </item>
     </channel>
 </rss>
