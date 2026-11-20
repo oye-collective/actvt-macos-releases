@@ -3,6 +3,28 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.17</title>
+            <pubDate>Fri, 20 Nov 2026 12:28:15 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.17</sparkle:version>
+            <sparkle:shortVersionString>1.4.17</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• A reminder before a weekly limit resets with much of it unused. Turn on Weekly limit left unused in Settings, and Actvt tells you once, a day before the reset, when half or more of the week is still left. You can change both numbers
+
+Improved
+• Every session shows its real message count. A long session used to show only what fit in its first part, so one with thousands of messages could read 200
+• When one model's long-prompt price changes, Actvt re-reads only the sessions that used that model, not every session. The first launch of this update re-reads them once
+• Plan limits are fetched once at launch, not two or three times
+
+Fixed
+• An update waiting to install no longer tries to while the welcome screen or another sheet is open. That attempt used to fail, the update then waited for the next launch, and quitting Actvt relaunched it hidden
+• Remote Sessions no longer shows a loop that runs in a sandbox as ended while it's working or asleep. Hosts get this with actvt-cli 0.12.0
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.17/Actvt-1.4.17.dmg" length="20114654" type="application/octet-stream" sparkle:edSignature="WAzxDqLpcFPltHhMkSE2ZgaDTy1G8fCvAK5eEQsR6Z7OHKr/JAYEMjqvlDwfo7m81g5jAc8GnpjCmqYRyER2Dg=="/>
+        </item>
+        <item>
             <title>1.4.16</title>
             <pubDate>Thu, 19 Nov 2026 12:39:57 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -38,22 +60,6 @@ Fixed
 • Machines under Remote Sessions get the title and loop fixes with actvt-cli 0.10.3, and Settings offers the update
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.15/Actvt-1.4.15.dmg" length="20110529" type="application/octet-stream" sparkle:edSignature="VmJpmzTAhRt5U66pfvR5a+NJCq7Cf5Xb9gVi+REtvDi/Wf1tOCM2qI/2ldjUsMHpiBHyFW5AxlEho4wKMl3JBQ=="/>
-        </item>
-        <item>
-            <title>1.4.14</title>
-            <pubDate>Wed, 11 Nov 2026 14:57:50 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.14</sparkle:version>
-            <sparkle:shortVersionString>1.4.14</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• When Claude Code or Codex is having an outage, Actvt says so. A line on the limits card and in the menu names the incident and links to it, and the "errors are piling up" alert tells you when the problem is on the provider's side, then again when it's over. It reads Anthropic's and OpenAI's public status pages, with no account and nothing about you sent. Turn it off in Settings > Agents
-
-Improved
-• Privacy detection now catches eight more kinds of secret pasted into a prompt: Slack and Discord webhook URLs, Google OAuth tokens, and PyPI, SendGrid, Twilio, Telegram bot and 1Password service-account tokens. Your existing sessions are checked again once, in the background, after the update
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.14/Actvt-1.4.14.dmg" length="19953613" type="application/octet-stream" sparkle:edSignature="DMvZ8CotcuKPU2o0BVDGBXtHPbJ0CAEsirIl+wj9kPHRn9ojtNmgfw8WjnJO5h7qNjd5kvHdmKsLeHQbcCSRCQ=="/>
         </item>
     </channel>
 </rss>
