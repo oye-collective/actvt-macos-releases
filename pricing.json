@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "updatedAt": "2026-11-18",
+  "version": 5,
+  "updatedAt": "2026-11-19",
   "currency": "USD",
   "perMillionTokens": {
     "gpt-6.2-astra": {
@@ -387,6 +387,146 @@
         "cacheWrite5m": 0.625,
         "cacheWrite1h": 1.0,
         "cacheRead": 0.05
+      }
+    },
+    "gpt-6.2-astra": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 16.0,
+        "output": 60.0,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 0.8
+      }
+    },
+    "gpt-6.2-sol": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 4.0,
+        "output": 15.0,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 0.2
+      }
+    },
+    "gpt-6-astra": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 20.0,
+        "output": 75.0,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 2.0
+      }
+    },
+    "gpt-6.1-sol": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 4.0,
+        "output": 15.0,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 0.2
+      }
+    },
+    "gpt-6.1-terra": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 2.0,
+        "output": 7.5,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 0.1
+      }
+    },
+    "gpt-6-sol": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 4.0,
+        "output": 15.0,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 0.4
+      }
+    },
+    "gpt-6-luna": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 0.2,
+        "output": 0.75,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 0.02
+      }
+    },
+    "gpt-5.6-sol": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 8.0,
+        "output": 30.0,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 0.8
+      }
+    },
+    "gpt-5.6-terra": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 4.0,
+        "output": 18.0,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 0.4
+      }
+    },
+    "gpt-5.6-luna": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 0.4,
+        "output": 1.8,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 0.04
+      }
+    },
+    "gpt-5.5-pro": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 60.0,
+        "output": 270.0,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 0.0
+      }
+    },
+    "gpt-5.5": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 10.0,
+        "output": 45.0,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 1.0
+      }
+    },
+    "gpt-5.4-pro": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 60.0,
+        "output": 270.0,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 0.0
+      }
+    },
+    "gpt-5.4": {
+      "aboveTokens": 272000,
+      "rate": {
+        "input": 5.0,
+        "output": 22.5,
+        "cacheWrite5m": 0.0,
+        "cacheWrite1h": 0.0,
+        "cacheRead": 0.5
       }
     }
   }
