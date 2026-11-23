@@ -3,6 +3,22 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.18</title>
+            <pubDate>Mon, 23 Nov 2026 11:30:08 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.18</sparkle:version>
+            <sparkle:shortVersionString>1.4.18</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• A loop that stops at a permission prompt now reads Waiting for input on the Loops card, right away, instead of working for hours. A loop whose agent is still running but has written nothing for 90 minutes reads Stalled. The card's header counts both with the overdue loops. Hosts get this with actvt-cli 0.13.0
+
+Improved
+• A Claude Code session you named with /rename shows that name in Actvt, in the sessions list, its transcript, Remote Sessions and MCP. A rename late in a long session counts too. Clearing the name brings back Claude's own title, and a name you gave the session in Actvt still comes first. Hosts get this with actvt-cli 0.13.0
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.18/Actvt-1.4.18.dmg" length="20122196" type="application/octet-stream" sparkle:edSignature="+l7kX+hlv9VF1IhxpRsbTE7O1LTIP/Q/+3GyInP6NE/NJnKYOCrYL2kgwPYx/utFH2QefKNhjpNjDczDGsVvAw=="/>
+        </item>
+        <item>
             <title>1.4.17</title>
             <pubDate>Fri, 20 Nov 2026 12:28:15 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -41,25 +57,6 @@ Improved
 • Codex sessions on GPT-6.2 Astra and Sol are priced from the first launch
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.16/Actvt-1.4.16.dmg" length="20098400" type="application/octet-stream" sparkle:edSignature="9PNgbK27hRTzy503vdPBLTgwVnHDm+ez9nFRtMKOasELFApmJP5C+ZY00VYa9YQPQT2us7aEFLmZ1pYxgFLmDA=="/>
-        </item>
-        <item>
-            <title>1.4.15</title>
-            <pubDate>Mon, 16 Nov 2026 10:45:45 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.15</sparkle:version>
-            <sparkle:shortVersionString>1.4.15</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• The limits card remembers how each week ended. Under the live bar you'll see last week's share and what that week's work cost on this Mac, and agents can read past weeks over MCP
-
-Fixed
-• Codex sessions that the Codex app compressed after about a week are back, with their transcripts, search and privacy checks
-• Claude Code sessions show the title Claude Code gave them again, not their first prompt
-• Loops no longer read as working while they sit idle at their prompt, or as asleep while they run a shell command
-• Machines under Remote Sessions get the title and loop fixes with actvt-cli 0.10.3, and Settings offers the update
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.15/Actvt-1.4.15.dmg" length="20110529" type="application/octet-stream" sparkle:edSignature="VmJpmzTAhRt5U66pfvR5a+NJCq7Cf5Xb9gVi+REtvDi/Wf1tOCM2qI/2ldjUsMHpiBHyFW5AxlEho4wKMl3JBQ=="/>
         </item>
     </channel>
 </rss>
