@@ -3,6 +3,24 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.19</title>
+            <pubDate>Tue, 24 Nov 2026 10:20:21 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.19</sparkle:version>
+            <sparkle:shortVersionString>1.4.19</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• Spend alerts for a day or a month. Turn on Daily spend or Monthly spend in Settings and Actvt tells you once when your agents pass the limit you set. It counts every agent on this Mac and on your Remote Sessions hosts, at API rates. Monthly spend is part of Premium
+
+Improved
+• Agents that ask Actvt over MCP now get replies they can read. A session list or a week of machine history used to be too big for Claude Code, so the agent got nothing. Lists now come back as compact tables in pages, and an agent can ask for only the parts it needs
+• Remote Sessions is much lighter on the host. Each minute, actvt-cli reads only the sessions that changed since the last check. It used to read all of them again. Hosts get this with actvt-cli 0.14.0
+• A new or offline install prices long Codex prompts at their higher rate before it's fetched the latest prices
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.19/Actvt-1.4.19.dmg" length="20193719" type="application/octet-stream" sparkle:edSignature="GjJZFMJfL7rhlddxcwvEpAiJvnigNCDn7h+rP5B4PepUD3EgsdWqaTk4T60S+gu5SdiWlB/9BfdYs5gj3MERDQ=="/>
+        </item>
+        <item>
             <title>1.4.18</title>
             <pubDate>Mon, 23 Nov 2026 11:30:08 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -39,24 +57,6 @@ Fixed
 • Remote Sessions no longer shows a loop that runs in a sandbox as ended while it's working or asleep. Hosts get this with actvt-cli 0.12.0
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.17/Actvt-1.4.17.dmg" length="20114654" type="application/octet-stream" sparkle:edSignature="WAzxDqLpcFPltHhMkSE2ZgaDTy1G8fCvAK5eEQsR6Z7OHKr/JAYEMjqvlDwfo7m81g5jAc8GnpjCmqYRyER2Dg=="/>
-        </item>
-        <item>
-            <title>1.4.16</title>
-            <pubDate>Thu, 19 Nov 2026 12:39:57 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.16</sparkle:version>
-            <sparkle:shortVersionString>1.4.16</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• What your agents spend on your other machines now counts. Claude Code sessions on a Remote Sessions host go into the Overview's totals and history like the ones on this Mac, and a new card splits spend by machine. A session that's on both is counted once
-• Hosts need actvt-cli 0.11.0 for this, and the Overview names any machine that's still on an older one
-
-Improved
-• Long transcripts read several times faster, here and on your Remote Sessions hosts, so a long remote session opens sooner
-• Codex sessions on GPT-6.2 Astra and Sol are priced from the first launch
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.16/Actvt-1.4.16.dmg" length="20098400" type="application/octet-stream" sparkle:edSignature="9PNgbK27hRTzy503vdPBLTgwVnHDm+ez9nFRtMKOasELFApmJP5C+ZY00VYa9YQPQT2us7aEFLmZ1pYxgFLmDA=="/>
         </item>
     </channel>
 </rss>
