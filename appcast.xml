@@ -3,6 +3,28 @@
     <channel>
         <title>Actvt</title>
         <item>
+            <title>1.4.20</title>
+            <pubDate>Wed, 25 Nov 2026 11:33:28 +0000</pubDate>
+            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
+            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
+            <sparkle:version>1.4.20</sparkle:version>
+            <sparkle:shortVersionString>1.4.20</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
+            <description sparkle:format="plain-text"><![CDATA[New
+• Remote sessions now show when they're waiting on you, the same way sessions on this Mac do. A Claude Code session on another machine that's asking for permission or sitting at its prompt shows as waiting within a minute. Hosts get this with actvt-cli 0.15.0
+
+Improved
+• The privacy scan now catches Groq, xAI, Replicate, Linear, DigitalOcean, Shopify, Supabase, Postman, Notion, Grafana, Databricks and Doppler tokens even when they're pasted on their own, with no name next to them. Your existing sessions are checked again once, in about ten seconds
+• The Claude card shows what you've spent on usage credits even when you haven't set a monthly limit, and on plans that only use credits
+• Opening Actvt checks each remote host once instead of three times in the same second
+
+Fixed
+• A Codex thread you rolled back no longer shows up as two sessions, one of them untitled, and the turn you undid is gone from it
+• On the home view, the CPU tile no longer sits right against the Agent Actvt card below it
+]]></description>
+            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.20/Actvt-1.4.20.dmg" length="20247700" type="application/octet-stream" sparkle:edSignature="hphQtj2xrlnrNIr4UA8Cyt0tmCX5dAJqDYH2v6QJPun28IsLwJCFVZay+35MLSTEI1yGaKb3LERUgMvQDhEECw=="/>
+        </item>
+        <item>
             <title>1.4.19</title>
             <pubDate>Tue, 24 Nov 2026 10:20:21 +0000</pubDate>
             <link>https://oye-collective.github.io/actvt-macos-releases/</link>
@@ -35,28 +57,6 @@ Improved
 • A Claude Code session you named with /rename shows that name in Actvt, in the sessions list, its transcript, Remote Sessions and MCP. A rename late in a long session counts too. Clearing the name brings back Claude's own title, and a name you gave the session in Actvt still comes first. Hosts get this with actvt-cli 0.13.0
 ]]></description>
             <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.18/Actvt-1.4.18.dmg" length="20122196" type="application/octet-stream" sparkle:edSignature="+l7kX+hlv9VF1IhxpRsbTE7O1LTIP/Q/+3GyInP6NE/NJnKYOCrYL2kgwPYx/utFH2QefKNhjpNjDczDGsVvAw=="/>
-        </item>
-        <item>
-            <title>1.4.17</title>
-            <pubDate>Fri, 20 Nov 2026 12:28:15 +0000</pubDate>
-            <link>https://oye-collective.github.io/actvt-macos-releases/</link>
-            <sparkle:phasedRolloutInterval>43200</sparkle:phasedRolloutInterval>
-            <sparkle:version>1.4.17</sparkle:version>
-            <sparkle:shortVersionString>1.4.17</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.5</sparkle:minimumSystemVersion>
-            <description sparkle:format="plain-text"><![CDATA[New
-• A reminder before a weekly limit resets with much of it unused. Turn on Weekly limit left unused in Settings, and Actvt tells you once, a day before the reset, when half or more of the week is still left. You can change both numbers
-
-Improved
-• Every session shows its real message count. A long session used to show only what fit in its first part, so one with thousands of messages could read 200
-• When one model's long-prompt price changes, Actvt re-reads only the sessions that used that model, not every session. The first launch of this update re-reads them once
-• Plan limits are fetched once at launch, not two or three times
-
-Fixed
-• An update waiting to install no longer tries to while the welcome screen or another sheet is open. That attempt used to fail, the update then waited for the next launch, and quitting Actvt relaunched it hidden
-• Remote Sessions no longer shows a loop that runs in a sandbox as ended while it's working or asleep. Hosts get this with actvt-cli 0.12.0
-]]></description>
-            <enclosure url="https://github.com/oye-collective/actvt-macos-releases/releases/download/v1.4.17/Actvt-1.4.17.dmg" length="20114654" type="application/octet-stream" sparkle:edSignature="WAzxDqLpcFPltHhMkSE2ZgaDTy1G8fCvAK5eEQsR6Z7OHKr/JAYEMjqvlDwfo7m81g5jAc8GnpjCmqYRyER2Dg=="/>
         </item>
     </channel>
 </rss>
